@@ -1,0 +1,6 @@
+framework module Pods_Infobip {
+  umbrella header "Pods-Infobip-umbrella.h"
+
+  export *
+  module * { export * }
+}

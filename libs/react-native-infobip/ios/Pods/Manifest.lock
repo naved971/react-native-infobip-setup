@@ -1,0 +1,16 @@
+PODS:
+  - MobileMessaging/Core (6.0.0)
+
+DEPENDENCIES:
+  - MobileMessaging/Core (= 6.0.0)
+
+SPEC REPOS:
+  trunk:
+    - MobileMessaging
+
+SPEC CHECKSUMS:
+  MobileMessaging: 557c92116be42c7f921c0b946ffbb4634ae4f267
+
+PODFILE CHECKSUM: 9bd2cad77e015783810f34410a996f215228deab
+
+COCOAPODS: 1.8.4

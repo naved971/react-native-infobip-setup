@@ -1,0 +1,1400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		002D0FB922FEDD61C0E1EF67C4027E46 /* MessageFetchingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E54A7F288DBA9640E6ED029FCAC9386 /* MessageFetchingOperation.swift */; };
+		00A6DEF3E71B0AB7A0798FA2F0691733 /* RegistrationResetOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F79C81C49F9C6D51FD41E642B4C1D2 /* RegistrationResetOperation.swift */; };
+		00A80D5C9B81E5D54FCDA83712D2AACA /* ImageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB23973A7A6E4E03D2F7208C3AB73C9 /* ImageModifier.swift */; };
+		01570BAED77A2BF3686D522F58C78E24 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01872A8221825C6D24CA288F49F97FA9 /* Digest.swift */; };
+		04F096F8EE4EAB95353EF5283B589C51 /* MMUserAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B62FA5D5ECC42AAC51F8FB906531CE /* MMUserAgent.swift */; };
+		05147C7AE713BAA1B72918955385BABE /* MMLocalization.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0307871908047D5F156AB219888E2BD /* MMLocalization.swift */; };
+		054682E930B8AE840A56AF676A60A520 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903659A303AB9FB020585B0E186634F8 /* ResponseSerialization.swift */; };
+		06FB8C6CB794E0FE6ABB434DBD2C9454 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A2D4CE1B8646DC3F607CBE380C7EFD /* Notifications.swift */; };
+		07F45D39CBE994611F3EC8FB9AAA4914 /* RemoteAPIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5270FA574FCC13F2E901C33D182792 /* RemoteAPIProvider.swift */; };
+		095DBA65CE10F644A3495E58620429D3 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D1987A995FC04DACAF348DCF30865D /* UInt32+Extension.swift */; };
+		0A8CD9C12E39C2126D5A6E13E516C177 /* MMAPIKeysAndValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9957DC6A5AE11940AC3B4B32030CC3D6 /* MMAPIKeysAndValues.swift */; };
+		0CC92E80400A510F73708AEDFF0F3032 /* MessageHandlingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C303E9929A0F654FDFE107958BA37AA /* MessageHandlingOperation.swift */; };
+		0EA40D4F9EBAC22AC31EC4019AFF9D6D /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB021285D25E0EEC4601FFD55B7570D7 /* Image.swift */; };
+		1210237703527DF9BBF544A8F2D4A115 /* MessageHandlingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68114ABC75F0515F29BD6912B4A81CD7 /* MessageHandlingDelegate.swift */; };
+		14480B5D9C227BE9BCF2247A6708F9F1 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF02B1C39AFACC7D92753CED478B253E /* Utils.swift */; };
+		14631E12E229E099D0BA1445FA902C37 /* FetchInstanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD80D01D7C78EA054031BC4B8B40101A /* FetchInstanceOperation.swift */; };
+		14BFC065F95690E9806CF283F5FCECE0 /* UpdateInstanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308D96965E17AB2D11D0C55E771188C1 /* UpdateInstanceOperation.swift */; };
+		1541CE69323B2065327CF0AF87E1C6D4 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E30E8B8EF104E346CD6F971E9529CE /* Validation.swift */; };
+		16C8B327BFB6C8ED520D024EDC38436A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB39300EC169A36390AE76E4E287F7E6 /* Message.swift */; };
+		171BC8E5A8F1C9B12BA5028996AA85E9 /* OperationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01FCB6B099D5F4414FD174E7AEEDCE83 /* OperationErrors.swift */; };
+		1727F1EAC9F978EB11F2AB65F8179269 /* MMDefaultMessageStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C934EEF91633270A789B558440DD61D3 /* MMDefaultMessageStorage.swift */; };
+		18FD02FA491BAD5EE869F064C1C6E3EE /* BaseMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0019AACBA53DAAE556FC753771B21261 /* BaseMessage.swift */; };
+		1921DFCE84DF93264CEB771CB92C02B5 /* StorageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3D036034A5D6362D9E2BC04ED6A2F8 /* StorageProtocols.swift */; };
+		1ADE090E2809CE63EE5D6472ACF4CD1F /* MMNotificationCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16AE45CAA7154032159B0102FEA2EE01 /* MMNotificationCategory.swift */; };
+		1C73318EB799E596CDFC2973C9C3DFC7 /* InteractiveMessageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9626528A44CE0A0CDF167B5CE24E2974 /* InteractiveMessageButton.swift */; };
+		1CDBB0CE54CC4C19C701AC45CA85E703 /* MobileMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0A73A0C21B9E616AE8600F022484A4 /* MobileMessaging.swift */; };
+		1D21E3E07D667FE6574080560376BC4A /* ApnsRegistrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC22AB2C4988C7EAB7DA006A5AF5831D /* ApnsRegistrationManager.swift */; };
+		1E39ECFB42B8AACD1AE35CD229B3B004 /* UserDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9E69C5D93D83B1382A294D6048986 /* UserDataMapper.swift */; };
+		1EB1C5BB54AD99124A0E3F5D6B6F1A1F /* PrivacySettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBE181721E8F884A75E80468B1F8C3A /* PrivacySettings.swift */; };
+		229E6053E698D14304F40A5C1D5BC49A /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F352A60ACE75FB946176699CB83A3F /* OperationQueue.swift */; };
+		27665F1DB208ADEEF0650561A385288E /* MTMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBECC5E952722A39FE8EA487EAC0AAE8 /* MTMessage.swift */; };
+		27706EF834FD582ADA2A387F990B7362 /* Transformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AE9D68D56F52106B51CA00D3994B0E /* Transformer.swift */; };
+		2B1EE05145564FE2B6C3D4956A4A7ABA /* ImagePrefetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9EEE32892655EEC6CDCA30606717B5D /* ImagePrefetcher.swift */; };
+		2CADFFE3178F6BAC830CF4176146BDA2 /* Pods-Infobip-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F9AF72FA6D7A451C1AA0714AE623D7A /* Pods-Infobip-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31E59EEC068C05DD9047BE8AACC602AD /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97578E0A48309F91F7F19759B233522 /* GroupOperation.swift */; };
+		334C874A95A8A1325B8844F69CD9689D /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5A8863B1513262271100DB93030751 /* Generics.swift */; };
+		33BC20970A0847782F0D294A0D972E0A /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40DCFB8EE494611D2C309D89847952BD /* KingfisherOptionsInfo.swift */; };
+		33E44E089ED76819D3D12C3010B164B5 /* MobileMessagingCordovaApplicationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 554E79AF54CD4F36BD6D60C948661DFB /* MobileMessagingCordovaApplicationDelegate.m */; };
+		36620E95530931E6F23CBF7F39BE0386 /* Migration_1_3.xcmappingmodel in Resources */ = {isa = PBXBuildFile; fileRef = 32A0056ED29CE9208933209102B22014 /* Migration_1_3.xcmappingmodel */; };
+		36737A982C6FAC040F9C77B367C442B3 /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFBD7C29CC50D5DE22920A12B3D8256 /* String+MD5.swift */; };
+		3733465AE9BE28961AB5084641C1AC2D /* RetryableDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7B8930E35E1A6F29A06E7B37F79CD8 /* RetryableDownloadTask.swift */; };
+		390AC6E39E023678733A67AEAC294503 /* AlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D047B81AFB68D759BE64420892BFA70 /* AlertController.xib */; };
+		3E146F13446B4B9A6CB914F1C65069DB /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8757E36DAADCD74DD2FD5F8D900480BE /* Kingfisher.swift */; };
+		3EF736B525396763F49F8DC941B55D06 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FD67E0C6823D202E862B90A0B402305 /* SystemConfiguration.framework */; };
+		3F2815633ACB232A02D35392A22A9069 /* MMVersionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4C6BCB83398E65492DA973E59EFD6 /* MMVersionManager.swift */; };
+		3F325146E1D3B6B92612EE146576235E /* Migration_0_3.xcmappingmodel in Resources */ = {isa = PBXBuildFile; fileRef = 05B7C6DA537F4A5959F540B645BB87FF /* Migration_0_3.xcmappingmodel */; };
+		43A8E772D95A67802367E809343425A4 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD9118C71BD7BEA58E3A64F8963B0EB /* ThreadHelper.swift */; };
+		43BFF10C8254E5FECEC66F88EEBB60A2 /* NotificationsInteractionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C10140DC8BBD95D7CE9C19516236A64C /* NotificationsInteractionService.swift */; };
+		46EB10BCDAF3B1C67714D1D89BE4E336 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F36D8C8D49B56542BAA90FE98F07C4 /* String+Extension.swift */; };
+		48377C1F5CDACA108735736D844F96E5 /* CreateInstanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE45813AF9B30DF47C417BBA7BFAE69 /* CreateInstanceOperation.swift */; };
+		4B0227F7DE34D4E3154B2D51CA85D539 /* InteractiveMessageAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9160ECD98561D2B8B6B625794D99A2C2 /* InteractiveMessageAlert.swift */; };
+		4B9B47CF885A34A9CC0BD99F62C8E4DF /* UIButton+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A44AA89F75F0339543659FF4B973D /* UIButton+Kingfisher.swift */; };
+		4CEC31A33CB0D3BD9CCDA91931F0D0FD /* Migration_2_3.xcmappingmodel in Resources */ = {isa = PBXBuildFile; fileRef = D4272E1F992ED8BBEA3C5942D6B59EEE /* Migration_2_3.xcmappingmodel */; };
+		4D4B796521D5B865BD0C87B51B0FBF4E /* MessageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD5182154C04D4AA6C30BF7C5978BB8 /* MessageUtils.swift */; };
+		4F70C6456418C2EA1138941414C56E98 /* UserNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA13B4AF34FD3695DFA36A1AA16195 /* UserNotificationType.swift */; };
+		4FEFD53C73E3213E5983D74C973C48D5 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CCB09D71C8556C43B874563E168930E /* Int+Extension.swift */; };
+		50D8AE3176A59F8640ACF2BBEA803CD9 /* DeleteInstanceOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE6C13261E8B58309A068EA72C9DD1BD /* DeleteInstanceOperation.swift */; };
+		54715569A39F4809BFFDC6196EE31E10 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2980162CFE359A33FE5847FADB40849F /* SwiftyJSON.swift */; };
+		54980E301C7BA5C7786EE433D5501B91 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A2B96071A7F5EA97656AA082544D28 /* Result.swift */; };
+		54E3F8824B2EDC5FA35D8B51C2C668F1 /* SeenStatusSendingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6C9D2FCFFBBE1A5207D6D2EAFC54BC /* SeenStatusSendingOperation.swift */; };
+		5898AD54B53F88737BEE3C71CE67CE43 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6408EE42C4313B14175145E271E58B9 /* Alamofire.swift */; };
+		590C3D448A57F2A068840FB523E49852 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B077E26CC468361BE6F766DE71B993C2 /* SHA1.swift */; };
+		5A9B7CF2C75943AD2F7C72A0CFEAF414 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EA5DB829C5FE61CBA0EDB7BFD2D5CE /* MultipartFormData.swift */; };
+		5D3C7F58591B493E30F6E8C7BBC9FBFF /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD0D54ED5D0557F0F0885E5971600B4 /* Updatable.swift */; };
+		5D40D1B360501C0ED8DC8A4B3A7739A5 /* MMNotificationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D32852368BDC2A0FC076CE0CF60F27E /* MMNotificationAction.swift */; };
+		5D7E0ADE0590ED27C335E0DB0BFE136F /* MMMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835CEEA0B27F20F447450BA22F32A611 /* MMMessageHandler.swift */; };
+		61139F240828D2ECDF0A8373A8B4740E /* NSOperation+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479E0E33A44EC8F393490D24079C92DE /* NSOperation+Operations.swift */; };
+		61AC1419A4B7DF1C597160B6F95A54DC /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951BCBF4186521FEA2BECDF3B356F67F /* Bit.swift */; };
+		65BF01EDDD953ECD1BAD28C7B74D2C2D /* MessageManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BB46FEBAE8C2F6649E2DB7FECCE353 /* MessageManagedObject+CoreDataProperties.swift */; };
+		6633C528912708E1ABA9985399DD2D50 /* PersonalizeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C476303F761CF4932D95F3256D993F /* PersonalizeOperation.swift */; };
+		6687FEABB33DCF91935700D173952412 /* MMLoggingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01E7C297C2B55D7F6CD33014146A35D /* MMLoggingUtil.swift */; };
+		68B1DF74DA07033E4A17D9096F786672 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DD91D856D30F5B62A2701E4C97FD3CF /* BatchedCollection.swift */; };
+		68FFA9BC01FEE4A04EE47CF46A93E7EF /* BlockOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CAF365577902EAF31700703C70FA804 /* BlockOperation.swift */; };
+		6D874CE2E550F9820280A6FF66350C3F /* OperationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3787199B4FF609E1AD36CBCDCAEA11 /* OperationCondition.swift */; };
+		6E65C4DC9F0B57D00C486F51C074C4BF /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FAABE35FC2221CB313A87E7C2CE7B8 /* SessionDelegate.swift */; };
+		72197C3922FFA4A50FF2F7C3F141897F /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD1440490BADB70E26B2D4B345D0BB5 /* UserDataService.swift */; };
+		72798C5B051AC3C9EA669D5B992E9968 /* MMCoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6473F29E5F3121148AB1E4BFDC99E00D /* MMCoreDataExtensions.swift */; };
+		7459B0F8E935CA33001E54292EE47CC4 /* MMInternalStorageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C515ED3C928DC93FD20B5770FC9C9478 /* MMInternalStorageModel.xcdatamodeld */; };
+		747EF6E61D3D907140830C58A4286B55 /* AlertQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B9A0C76A7ECF8DBA822179C1134A5E /* AlertQueue.swift */; };
+		763D37BD6E04D50CCEF7674B56256DD0 /* InstallationManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AE2AB8B869A325EE0666D1385C0949 /* InstallationManagedObject.swift */; };
+		782AA7AAF8F1F0B0F2BB2675753DF409 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = B731CFB0B208A1E4BF8049F1C6EFC38A /* ImageView+Kingfisher.swift */; };
+		79B93030CA5ADCAC12F22FAB3E944B53 /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4E52AC3237CD832662923F00255516 /* State.swift */; };
+		79D58D9B446DAED5870F298128631E47 /* NSLock+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D8704018A8A2F5FD490E3B2B264DA4 /* NSLock+Operations.swift */; };
+		7AA300DDB96EBD3EC5EA208659055F5E /* MobileMessaging-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A5F192CC28D483A12BF538EF6366CFCF /* MobileMessaging-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7ADA8018BE2E23F0A67FB0509D4B96EC /* MOMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0FAD0FE10BE04AD143031DFC94BAE /* MOMessage.swift */; };
+		7B46F11B8E804F92679BFBC2E897E02D /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07641BF2FCA18334BDAF8183F6C9B719 /* Operation.swift */; };
+		7F7560972FC1D33D514DDAF07BAAD39D /* UpdateUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051DA22F70EF1E5588B512C08042BE52 /* UpdateUserOperation.swift */; };
+		7F770A9400523601943D5998367E16F4 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEACDA1999DD8B6895A868D51BA2D2C /* Response.swift */; };
+		8001F8A454ED1F36F1FF4565BC9F8D30 /* MessagePostingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457EA85FEBB617DF9C4A479FBD7E7AAC /* MessagePostingOperation.swift */; };
+		8123F4D06D61AD8132B5E748E07EB925 /* Alamofire.h in Headers */ = {isa = PBXBuildFile; fileRef = ECDDA8E12AAD7779561BE5B4037451B2 /* Alamofire.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		83A14C7728B089981C93D32CEE4DF825 /* MMApplicationListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A15F2E4CCCDB30F3EFE11748758557 /* MMApplicationListener.swift */; };
+		8610947EC3895B3F2D433CDB824BB845 /* UserCustomAttributeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8653BCFBE31751B9D5861492A1FD118A /* UserCustomAttributeModels.swift */; };
+		8658AE70BEBFAB82ACD62221E55EC332 /* LoadingImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C6B4E560F48F497992326EBAA1AFE5B /* LoadingImageView.xib */; };
+		886419CB684165C5137F721AFD3E0F74 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528B176C0EF32848DE3804960AD42B43 /* Box.swift */; };
+		88D340289249C2C9A202D8D59CAE5759 /* MMNSErrorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60F5E1A8F991A5701783E4D7935F2E5D /* MMNSErrorExtension.swift */; };
+		8B432619B641683A480D3B275F53D507 /* MMGCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283D47159B8232F661832C09B016A61B /* MMGCD.swift */; };
+		8BB359B9FC6D76FF4239D787370C4775 /* KeychainSwiftAccessOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE84CDDA9C7184EDF9FFEC43E61FA97E /* KeychainSwiftAccessOptions.swift */; };
+		8BFEF7A0FC82F903FC3D751891A1A07F /* MobileMessaging-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5933A63FC189D0FC50D48BE76DC6F2C3 /* MobileMessaging-dummy.m */; };
+		8D84C1E71AF46F7AB7EC5EA41634AAC1 /* KingfisherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294689A52CE9FF4723085B33EAF3517C /* KingfisherManager.swift */; };
+		92E896A06B0D3257428CAF296E98BAD2 /* MessagesEvictionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8C9C6DC8233DAFB8DAE84B08D5EA50 /* MessagesEvictionOperation.swift */; };
+		940F8A9F1F331A1D6ACD7BF3C6CEA7FE /* LocalMessageFetchingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E516FEF5F9C6F52158CB1BBBDA10FBB /* LocalMessageFetchingOperation.swift */; };
+		944B321AC3F473536A4C191E70D6C0B6 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94438585BC2377DD92D3D0BF0E2B4AE /* DigestType.swift */; };
+		963E3EC95B40D66C88AD0DD78A243973 /* MobileMessagingCordovaApplicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DAF74274BD6B70484A48984CC5D60C6B /* MobileMessagingCordovaApplicationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9671A76A8A1357845CCC1DD9EF8C9B9C /* MMRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE9120BD78E5A21F896D8D86A529059F /* MMRequests.swift */; };
+		96C754D9EC3204AD36C335A7DBAD9ACA /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4101DC0F5F5106CE57B7496384413650 /* TaskDelegate.swift */; };
+		9781275258F32C55D70EAD16F646919A /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E062F8FBC90411FA3D15E237E0D4868 /* NetworkReachabilityManager.swift */; };
+		99C8D402248977CD12D502815F7B1A0E /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B6A00567E9507DB93AF0B585C12400 /* SessionManager.swift */; };
+		9C0F14AE772A3935734F337983146AF2 /* MMNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 8164541020C5E70A658E25F1E5471B16 /* MMNotifications.m */; };
+		9D9E87A4B28696C406CA2FCCECEA5E8A /* UserNotificationCenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A07D869EBEC5BF6C5399E50D137528 /* UserNotificationCenterDelegate.swift */; };
+		9E4472CDA9AA20BDDA28D351F85B6557 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86DBFE0C3A719EF88C2B56B764A1BE4 /* Resource.swift */; };
+		A0E37CD419D3BEB283EE4A6362586A4F /* OperationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DDE98ABD2814861A01FE71A8099B8C /* OperationObserver.swift */; };
+		A103C30F1A45E1D5404FEC6426321527 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26CAF0DC6A8F2E6AE6BAA9C7A465D29D /* ImageCache.swift */; };
+		A25121A19719756E456BD8B6960297C0 /* DepersonalizeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356167FAA680977B33E04EE066169058 /* DepersonalizeOperation.swift */; };
+		A850430AAFF0F0F646D7712DB47D0CBB /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F90E4460EDDF64DFA5F494882DD42C08 /* Timeline.swift */; };
+		AA93E6D46E1D4B1B77D6151196662736 /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC31276A8581A81C889380A2CDC71D66 /* Placeholder.swift */; };
+		AC0E5BD5C71E7FE292BB3B123503F440 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46D6704CDC14DFCA2E402ED2328B4C4 /* CoreData.framework */; };
+		AEF8C2BD70BBBD8488820CBB8F0E536A /* Kingfisher.h in Headers */ = {isa = PBXBuildFile; fileRef = C9655E973E390ECBBD441C4685503EE4 /* Kingfisher.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		B0AA8E01C3A599EF0E98CB6BB24C02BD /* FetchUserOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD55F58205FCB59ED2D06F8901B72CE9 /* FetchUserOperation.swift */; };
+		B35B6FA60BEF1A6EA38B571AF4D9A72F /* SeenStatusPersistingOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B340095FC942B9ABC18187377D22A4 /* SeenStatusPersistingOperation.swift */; };
+		B3FF59133AA8AA337AF75DFDDCAD6815 /* MMResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A67587FF018E82A2BE8C07BD90169F2 /* MMResponses.swift */; };
+		B4FB971BF86C7F4B512AF62A50BFFC5F /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3EDAE4DD24F0324A21B8B87E1921B /* Message+CoreDataProperties.swift */; };
+		B62DE5ABB9C2F451BD2ED9C904F4AC7A /* LoadingImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF8599A4A914DB076BCA49AC308045B /* LoadingImageView.swift */; };
+		B6D86DB3CDA011383192B0AF9C605D4F /* TegKeychainConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3C5E0E6218FE8A5743398320E6417 /* TegKeychainConstants.swift */; };
+		B9524CAB18B5B44543010C6707844F99 /* MMKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2560E4B418557D335A636A08A2DB6D5 /* MMKeychain.swift */; };
+		BA08FCB3A3E5930AD284825A55E95390 /* MMVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06641023581E3812FC04B4DB2FDD9D7F /* MMVersion.swift */; };
+		BADD05D04FBA728151597FD8B3AD07D2 /* InstallationDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D54BB08F883C7AA4AAF9F1D9760C2D /* InstallationDataService.swift */; };
+		BB92473F16CB9F2E49687ED4FF808F05 /* KeychainSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4896B834B4B8BD715C0EB94B42937ABF /* KeychainSwift.swift */; };
+		BB9AD21716BB98A6664EE4013C5589BE /* InstallationManagedObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D89C095501A44A16F0EE21804308E2A /* InstallationManagedObject+CoreDataProperties.swift */; };
+		BCB2D27D4CB71D0962BEAAE5A7398B5D /* GeoEventReportObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABBE8DBB4EBC50CFFB731A27F8EFEC3D /* GeoEventReportObject+CoreDataProperties.swift */; };
+		BF11E2C7786BD32CAF4879137B7C83CE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F011C4549366FA7231E59B89DE0CAC /* Request.swift */; };
+		BF4BD9267A8CC96C89A92C135B85FA0E /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE8C02B9D50D278E463BD2D7680D7EA /* ImageDownloader.swift */; };
+		BFD03422043F2769BFBC689DA5D4CD8F /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF90928E54FC6B61E445712F123AA1B /* Filter.swift */; };
+		C0288BDCE4553B4C525087D167CB5C08 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CA41C38EEBDD87334F403B09B15AEF /* AFError.swift */; };
+		C05FEB79D6388B2549E10DBB09A9DF17 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F9001F13442FC92E6C2F96746C6981C /* ServerTrustPolicy.swift */; };
+		C2E1C750AD93B3285081400CC0523DED /* FormatIndicatedCacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B304BA161EB0DD776AEC27CCA913B9 /* FormatIndicatedCacheSerializer.swift */; };
+		C4C35481B47D51BC9ECC604B1E932235 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5333EC8F6E5FDA9274FED10837EAE9B4 /* Requests.swift */; };
+		C679D5256564278B9DFF45ACF05F2C00 /* RichNotificationsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3079A6C5381A383039E1482B152582D0 /* RichNotificationsExtensions.swift */; };
+		C73F6FDD3FD9BE1E5B18F1CAF35EA651 /* BlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D56FDCCCE73CF24EDE18E42AC9DC395 /* BlockObserver.swift */; };
+		C859977965BA4C79AC44EDBD8D35A591 /* Dictionary+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A853B9A8F3FF7005275D2A5F465784D6 /* Dictionary+Operations.swift */; };
+		C88C95A8B5F75F58E2757B2159731ABF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2626B13F0F50FC0A8CC219A19C1E82 /* Foundation.framework */; };
+		CA698E38AA8053AA40EA1E8E7A376C28 /* Archivable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EDF8836A53BC68ADC2B5F8B5080D53 /* Archivable.swift */; };
+		CACB75FDD4ACD3882A6644D0CB665056 /* InstallationAttributeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D7F97E825F22E671547EC470BF9FB3 /* InstallationAttributeModels.swift */; };
+		CF2F3FEAEE20B668E7799D595EE7DFB4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BFAE1A006323E8E0146D54761A7B7B /* CoreTelephony.framework */; };
+		D09C90C7C13434A8955B2B706D87B37E /* PredefinedNotificationCategories.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5E7F6FEC7C1178EC890A751B3BE1D37 /* PredefinedNotificationCategories.plist */; };
+		D2033611A3C16D4992984D7AD2ED0BAD /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A41F5C08662FCCAF2584CADCF51956D /* AnimatedImageView.swift */; };
+		D31C0FC0C62B02A43057E4E963F24C13 /* MobileMessaging.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8E24D3EB1531B73C96B34B5E5898D79B /* MobileMessaging.strings */; };
+		D35B6CC56612B9E8A98DA197C925380C /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577EE0A6620966D0C4C8654ADEA1850A /* DispatchQueue+Alamofire.swift */; };
+		D60635EA8B8771923C73409BF9E0BEC5 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B07805E504225833AAC094A40947124 /* ParameterEncoding.swift */; };
+		D691580B6BE28D53A697B88141380E82 /* UserStandardAttributeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F53543457E0D428063DC60408A818C /* UserStandardAttributeModels.swift */; };
+		D894A254F45E575EF593532FD35B8FF3 /* ExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A72E43EAEA87D25D2021EE304F1C93F /* ExclusivityController.swift */; };
+		D8D6BFF9593C7AE67DC6206E9AFE1FE8 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BEFB2CB0B349FFE2A1230A6D76687AD /* Array+Extension.swift */; };
+		D8F31725CD9F4A7F7DB4721CFD6D5864 /* MessageManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3F6D3EFD4290851F0A90ED1EB59F81 /* MessageManagedObject.swift */; };
+		DBC7F53B3352B1327E4D89FAE3FD6B68 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4447D0E195D265BFE612C52BBAAB7B55 /* CacheSerializer.swift */; };
+		E190E979B481FC66CEFE16A29E60D627 /* MMCoreDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1815898A17F1E7D1B1D2853C9C04B06B /* MMCoreDataStorage.swift */; };
+		E23F0F2EC315727B9C23BF4B3C64A427 /* MMOperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA9CA6035107F49A63CD7F69D1702F97 /* MMOperationQueue.swift */; };
+		E285C855500B3D02F219E3C073ACF6BD /* InteractiveMessageAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF94603C649EE13D39446EF4D758441 /* InteractiveMessageAlertController.swift */; };
+		E29136F109C9E5FD0B76DE5B76145017 /* ImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F822C636317A469D0F38C343EEF692AD /* ImageProcessor.swift */; };
+		E2BC08DF3C43A0458F7155D2A85ED96B /* InstallationMigrationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826A5EB12761844FDD845EEF166D874C /* InstallationMigrationPolicy.swift */; };
+		E5065D67694388172FE21A36A11CFC6F /* MMMessageStorageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB1F9FB51DF3DE134C941900BAB0B0DB /* MMMessageStorageModel.xcdatamodeld */; };
+		E613076DC0BB8CB682EE1AB9FC8D0B78 /* Pods-Infobip-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D793431EEE6B54AF7BCFC60D220AB2B /* Pods-Infobip-dummy.m */; };
+		E6EAE1DE42343CB1DB46983D38576E01 /* MMPostponer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE74E1D0E347AA60A5B2C0519CE3418 /* MMPostponer.swift */; };
+		E96AAE37B1BAAC36CBBE7AC6D3541F6F /* DynamicBaseUrlHTTPSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29DFE1CBED8BABFBBD19BB67CF42798D /* DynamicBaseUrlHTTPSessionManager.swift */; };
+		EAD2D0868FA4CFA5B01AAAA24E732A45 /* InstallationDataMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658A5D96E3BF144ED46089C4D40091F /* InstallationDataMapper.swift */; };
+		EB52D3616CE7ECCF1CD35181DEEC687E /* GeoEventReportObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70C232359126868288408188DC4A5BAD /* GeoEventReportObject.swift */; };
+		EBC9D975D434985DFF6F87880E800B7F /* UserEventsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAE220AFAC4EAFEF27D23880D72FF56 /* UserEventsManager.swift */; };
+		EFA5E85AE15D78FD00D980AC9512F3B5 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F2F90AD7EC65DC4F95A93F757F9068 /* Indicator.swift */; };
+		F12B5A26D467845C36DF8F75129B03B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2626B13F0F50FC0A8CC219A19C1E82 /* Foundation.framework */; };
+		F25C38F55F205BB9FFB8E3B26C0891F6 /* MessagesSyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EE66F502C669A0C6385C7F4A5BAA7F /* MessagesSyncOperation.swift */; };
+		F461E136B9E30CAE70B1D6B54FB00504 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59F1ED3B5CE1ABFBFB55F64C24E3FF /* Data+Extension.swift */; };
+		F57ED55F83BDF8CB87324B2E4098A1EF /* RequestModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C3F07DFDC2AAE7EA91C0DC3ACB1C38 /* RequestModifier.swift */; };
+		F9BA890ED92769D7EB322126DD25723B /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D743CAE2BDDF454D44CF3F5C75BC7 /* ImageTransition.swift */; };
+		F9ECD00921E89D744BEFA881448B55C7 /* MMNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = A301F02EE1065E67C819B55E3E29327C /* MMNotifications.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD29494B922B6C526FDEEE7854F51894 /* MMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA18626833165DE4B093B4163443A253 /* MMUtils.swift */; };
+		FD39617AD78B0FABEF5D157E8D03BF2D /* MMLocalNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2205ACF737F787B0E1E1557A4AC6F93E /* MMLocalNotifications.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0789F5B59DD1F1D607D6B5E0835648FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEF6026D4423DABCDACE9FAC4AFC458D;
+			remoteInfo = MobileMessaging;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0019AACBA53DAAE556FC753771B21261 /* BaseMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseMessage.swift; path = Classes/Core/Message/BaseMessage.swift; sourceTree = "<group>"; };
+		01872A8221825C6D24CA288F49F97FA9 /* Digest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Digest.swift; path = Classes/Vendor/CryptoSwift/Digest.swift; sourceTree = "<group>"; };
+		01FCB6B099D5F4414FD174E7AEEDCE83 /* OperationErrors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationErrors.swift; path = Classes/Vendor/PSOperations/OperationErrors.swift; sourceTree = "<group>"; };
+		02AE9D68D56F52106B51CA00D3994B0E /* Transformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transformer.swift; path = Classes/Core/InternalStorage/Transformer.swift; sourceTree = "<group>"; };
+		035B4EBDEBC1AA3A1345CB5AE1845450 /* Pods-Infobip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Infobip-Info.plist"; sourceTree = "<group>"; };
+		047BA3C796140523D92968F9A80C4623 /* Pods-Infobip-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Infobip-acknowledgements.markdown"; sourceTree = "<group>"; };
+		04A07D869EBEC5BF6C5399E50D137528 /* UserNotificationCenterDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserNotificationCenterDelegate.swift; path = Classes/Core/UserNotificationCenterDelegate.swift; sourceTree = "<group>"; };
+		051DA22F70EF1E5588B512C08042BE52 /* UpdateUserOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateUserOperation.swift; path = Classes/Core/Operations/AppOperations/UpdateUserOperation.swift; sourceTree = "<group>"; };
+		05B7C6DA537F4A5959F540B645BB87FF /* Migration_0_3.xcmappingmodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcmappingmodel; name = Migration_0_3.xcmappingmodel; path = Classes/Core/InternalStorage/Migration_0_3.xcmappingmodel; sourceTree = "<group>"; };
+		06641023581E3812FC04B4DB2FDD9D7F /* MMVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMVersion.swift; path = Classes/Core/MMVersion.swift; sourceTree = "<group>"; };
+		06F36D8C8D49B56542BAA90FE98F07C4 /* String+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Extension.swift"; path = "Classes/Vendor/CryptoSwift/String+Extension.swift"; sourceTree = "<group>"; };
+		07641BF2FCA18334BDAF8183F6C9B719 /* Operation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operation.swift; path = Classes/Vendor/PSOperations/Operation.swift; sourceTree = "<group>"; };
+		09F79C81C49F9C6D51FD41E642B4C1D2 /* RegistrationResetOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RegistrationResetOperation.swift; path = Classes/Core/Operations/AppOperations/RegistrationResetOperation.swift; sourceTree = "<group>"; };
+		0AE45813AF9B30DF47C417BBA7BFAE69 /* CreateInstanceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CreateInstanceOperation.swift; path = Classes/Core/Operations/AppOperations/CreateInstanceOperation.swift; sourceTree = "<group>"; };
+		0C2BE48E143431664FD251B518B1C857 /* MMStorageModel_2.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = MMStorageModel_2.xcdatamodel; sourceTree = "<group>"; };
+		0CF90928E54FC6B61E445712F123AA1B /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Classes/Vendor/Kingsfisher/Filter.swift; sourceTree = "<group>"; };
+		0DD91D856D30F5B62A2701E4C97FD3CF /* BatchedCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BatchedCollection.swift; path = Classes/Vendor/CryptoSwift/BatchedCollection.swift; sourceTree = "<group>"; };
+		0DE3B0757BD002A68EE681AD231FD579 /* MobileMessaging-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MobileMessaging-Info.plist"; sourceTree = "<group>"; };
+		115818C223CBDF283BAB149CA48B258A /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = hr.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		13EE66F502C669A0C6385C7F4A5BAA7F /* MessagesSyncOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesSyncOperation.swift; path = Classes/Core/Operations/AppOperations/MessagesSyncOperation.swift; sourceTree = "<group>"; };
+		16AE45CAA7154032159B0102FEA2EE01 /* MMNotificationCategory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMNotificationCategory.swift; path = Classes/InteractiveNotifications/MMNotificationCategory.swift; sourceTree = "<group>"; };
+		17C5EA8CA0606291B2A3FF55730A44F0 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = fi.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		1815898A17F1E7D1B1D2853C9C04B06B /* MMCoreDataStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMCoreDataStorage.swift; path = Classes/Core/InternalStorage/MMCoreDataStorage.swift; sourceTree = "<group>"; };
+		1D047B81AFB68D759BE64420892BFA70 /* AlertController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = AlertController.xib; path = Classes/InteractiveNotifications/MessageAlert/AlertController.xib; sourceTree = "<group>"; };
+		1DC12A4E505C96F878C854F0A306EC6D /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = id.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		1EF4C6BCB83398E65492DA973E59EFD6 /* MMVersionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMVersionManager.swift; path = Classes/Core/Utils/MMVersionManager.swift; sourceTree = "<group>"; };
+		1EFBD7C29CC50D5DE22920A12B3D8256 /* String+MD5.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MD5.swift"; path = "Classes/Vendor/Kingsfisher/String+MD5.swift"; sourceTree = "<group>"; };
+		2205ACF737F787B0E1E1557A4AC6F93E /* MMLocalNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMLocalNotifications.swift; path = Classes/Core/Utils/MMLocalNotifications.swift; sourceTree = "<group>"; };
+		2658A5D96E3BF144ED46089C4D40091F /* InstallationDataMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstallationDataMapper.swift; path = Classes/Core/Installation/InstallationDataMapper.swift; sourceTree = "<group>"; };
+		26CAF0DC6A8F2E6AE6BAA9C7A465D29D /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Classes/Vendor/Kingsfisher/ImageCache.swift; sourceTree = "<group>"; };
+		283D47159B8232F661832C09B016A61B /* MMGCD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMGCD.swift; path = Classes/Core/Utils/MMGCD.swift; sourceTree = "<group>"; };
+		28D8704018A8A2F5FD490E3B2B264DA4 /* NSLock+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLock+Operations.swift"; path = "Classes/Vendor/PSOperations/NSLock+Operations.swift"; sourceTree = "<group>"; };
+		294689A52CE9FF4723085B33EAF3517C /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Classes/Vendor/Kingsfisher/KingfisherManager.swift; sourceTree = "<group>"; };
+		2980162CFE359A33FE5847FADB40849F /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Classes/Vendor/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		299AC8CC4D3BBB92B8F488D39384EFBC /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = ja.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		29DFE1CBED8BABFBBD19BB67CF42798D /* DynamicBaseUrlHTTPSessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DynamicBaseUrlHTTPSessionManager.swift; path = Classes/Core/HTTP/DynamicBaseUrlHTTPSessionManager.swift; sourceTree = "<group>"; };
+		2E062F8FBC90411FA3D15E237E0D4868 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Classes/Vendor/Alamofire/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		2E8C9C6DC8233DAFB8DAE84B08D5EA50 /* MessagesEvictionOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagesEvictionOperation.swift; path = Classes/Core/Operations/AppOperations/MessagesEvictionOperation.swift; sourceTree = "<group>"; };
+		2E9E51B126F690F04284A47ABD6857D8 /* Pods-Infobip-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Infobip-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F5270FA574FCC13F2E901C33D182792 /* RemoteAPIProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteAPIProvider.swift; path = Classes/Core/HTTP/RemoteAPIProvider.swift; sourceTree = "<group>"; };
+		2F5A8863B1513262271100DB93030751 /* Generics.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Generics.swift; path = Classes/Vendor/CryptoSwift/Generics.swift; sourceTree = "<group>"; };
+		3079A6C5381A383039E1482B152582D0 /* RichNotificationsExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RichNotificationsExtensions.swift; path = Classes/RichNotifications/RichNotificationsExtensions.swift; sourceTree = "<group>"; };
+		308D96965E17AB2D11D0C55E771188C1 /* UpdateInstanceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UpdateInstanceOperation.swift; path = Classes/Core/Operations/AppOperations/UpdateInstanceOperation.swift; sourceTree = "<group>"; };
+		32A0056ED29CE9208933209102B22014 /* Migration_1_3.xcmappingmodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcmappingmodel; name = Migration_1_3.xcmappingmodel; path = Classes/Core/InternalStorage/Migration_1_3.xcmappingmodel; sourceTree = "<group>"; };
+		356167FAA680977B33E04EE066169058 /* DepersonalizeOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DepersonalizeOperation.swift; path = Classes/Core/Operations/AppOperations/DepersonalizeOperation.swift; sourceTree = "<group>"; };
+		398A992EDA8F2F1E9750C4590D3D65DA /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = en.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		3A67587FF018E82A2BE8C07BD90169F2 /* MMResponses.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMResponses.swift; path = Classes/Core/HTTP/MMResponses.swift; sourceTree = "<group>"; };
+		3A9A44AA89F75F0339543659FF4B973D /* UIButton+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Kingfisher.swift"; path = "Classes/Vendor/Kingsfisher/UIButton+Kingfisher.swift"; sourceTree = "<group>"; };
+		3CAB09500B8E9E45E3422DBCD2AE05B3 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = "zh-Hans.lproj/MobileMessaging.strings"; sourceTree = "<group>"; };
+		3D32852368BDC2A0FC076CE0CF60F27E /* MMNotificationAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMNotificationAction.swift; path = Classes/InteractiveNotifications/MMNotificationAction.swift; sourceTree = "<group>"; };
+		40DCFB8EE494611D2C309D89847952BD /* KingfisherOptionsInfo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherOptionsInfo.swift; path = Classes/Vendor/Kingsfisher/KingfisherOptionsInfo.swift; sourceTree = "<group>"; };
+		4101DC0F5F5106CE57B7496384413650 /* TaskDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TaskDelegate.swift; path = Classes/Vendor/Alamofire/TaskDelegate.swift; sourceTree = "<group>"; };
+		418208219917852A45B07DAE769C8BB0 /* Pods-Infobip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Infobip.modulemap"; sourceTree = "<group>"; };
+		43D8AEFB9A229775E125E3984820CD74 /* MobileMessaging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MobileMessaging.xcconfig; sourceTree = "<group>"; };
+		4447D0E195D265BFE612C52BBAAB7B55 /* CacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CacheSerializer.swift; path = Classes/Vendor/Kingsfisher/CacheSerializer.swift; sourceTree = "<group>"; };
+		457EA85FEBB617DF9C4A479FBD7E7AAC /* MessagePostingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagePostingOperation.swift; path = Classes/Core/Operations/AppOperations/MessagePostingOperation.swift; sourceTree = "<group>"; };
+		479E0E33A44EC8F393490D24079C92DE /* NSOperation+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOperation+Operations.swift"; path = "Classes/Vendor/PSOperations/NSOperation+Operations.swift"; sourceTree = "<group>"; };
+		4896B834B4B8BD715C0EB94B42937ABF /* KeychainSwift.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwift.swift; path = Classes/Vendor/Keychain/KeychainSwift.swift; sourceTree = "<group>"; };
+		48B9A0C76A7ECF8DBA822179C1134A5E /* AlertQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlertQueue.swift; path = Classes/InteractiveNotifications/MessageAlert/AlertQueue.swift; sourceTree = "<group>"; };
+		48F011C4549366FA7231E59B89DE0CAC /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Classes/Vendor/Alamofire/Request.swift; sourceTree = "<group>"; };
+		49B28837DCCA535336E187D93EC84ED2 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = pt.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		4A72E43EAEA87D25D2021EE304F1C93F /* ExclusivityController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExclusivityController.swift; path = Classes/Vendor/PSOperations/ExclusivityController.swift; sourceTree = "<group>"; };
+		4AB342E0764D4FB0171E1F421250232D /* MMStorageModel_1.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = MMStorageModel_1.xcdatamodel; sourceTree = "<group>"; };
+		4B07805E504225833AAC094A40947124 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Classes/Vendor/Alamofire/ParameterEncoding.swift; sourceTree = "<group>"; };
+		4D2FA4FA238D7A5F902A526205C5292F /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = he.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		4D89C095501A44A16F0EE21804308E2A /* InstallationManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "InstallationManagedObject+CoreDataProperties.swift"; path = "Classes/Core/InternalStorage/InstallationManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50C9E69C5D93D83B1382A294D6048986 /* UserDataMapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDataMapper.swift; path = Classes/Core/User/UserDataMapper.swift; sourceTree = "<group>"; };
+		5160B2405D5F105A1BBBD6D668C7F88C /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = tr.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		528B176C0EF32848DE3804960AD42B43 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Classes/Vendor/Kingsfisher/Box.swift; sourceTree = "<group>"; };
+		5333EC8F6E5FDA9274FED10837EAE9B4 /* Requests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requests.swift; path = Classes/Core/HTTP/Requests.swift; sourceTree = "<group>"; };
+		554E79AF54CD4F36BD6D60C948661DFB /* MobileMessagingCordovaApplicationDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MobileMessagingCordovaApplicationDelegate.m; path = Classes/Core/MobileMessagingCordovaApplicationDelegate.m; sourceTree = "<group>"; };
+		577EE0A6620966D0C4C8654ADEA1850A /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Classes/Vendor/Alamofire/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		58AE2AB8B869A325EE0666D1385C0949 /* InstallationManagedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstallationManagedObject.swift; path = Classes/Core/InternalStorage/InstallationManagedObject.swift; sourceTree = "<group>"; };
+		5933A63FC189D0FC50D48BE76DC6F2C3 /* MobileMessaging-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MobileMessaging-dummy.m"; sourceTree = "<group>"; };
+		598A68911757271B80877CD66336EE6F /* MMStorageModel_0.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = MMStorageModel_0.xcdatamodel; sourceTree = "<group>"; };
+		5A41F5C08662FCCAF2584CADCF51956D /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Classes/Vendor/Kingsfisher/AnimatedImageView.swift; sourceTree = "<group>"; };
+		5B3F6D3EFD4290851F0A90ED1EB59F81 /* MessageManagedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageManagedObject.swift; path = Classes/Core/InternalStorage/MessageManagedObject.swift; sourceTree = "<group>"; };
+		5BEFB2CB0B349FFE2A1230A6D76687AD /* Array+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+Extension.swift"; path = "Classes/Vendor/CryptoSwift/Array+Extension.swift"; sourceTree = "<group>"; };
+		5C6B4E560F48F497992326EBAA1AFE5B /* LoadingImageView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LoadingImageView.xib; path = Classes/InteractiveNotifications/MessageAlert/LoadingImageView.xib; sourceTree = "<group>"; };
+		60F5E1A8F991A5701783E4D7935F2E5D /* MMNSErrorExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMNSErrorExtension.swift; path = Classes/Core/Utils/MMNSErrorExtension.swift; sourceTree = "<group>"; };
+		62B62FA5D5ECC42AAC51F8FB906531CE /* MMUserAgent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMUserAgent.swift; path = Classes/Core/Utils/MMUserAgent.swift; sourceTree = "<group>"; };
+		644F11F46AC1C73690DA28F3ABD23398 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = "pt-PT.lproj/MobileMessaging.strings"; sourceTree = "<group>"; };
+		6473F29E5F3121148AB1E4BFDC99E00D /* MMCoreDataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMCoreDataExtensions.swift; path = Classes/Core/InternalStorage/MMCoreDataExtensions.swift; sourceTree = "<group>"; };
+		66CA41C38EEBDD87334F403B09B15AEF /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Classes/Vendor/Alamofire/AFError.swift; sourceTree = "<group>"; };
+		66F352A60ACE75FB946176699CB83A3F /* OperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationQueue.swift; path = Classes/Vendor/PSOperations/OperationQueue.swift; sourceTree = "<group>"; };
+		68114ABC75F0515F29BD6912B4A81CD7 /* MessageHandlingDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageHandlingDelegate.swift; path = Classes/Core/MessageHandlingDelegate.swift; sourceTree = "<group>"; };
+		68D1987A995FC04DACAF348DCF30865D /* UInt32+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UInt32+Extension.swift"; path = "Classes/Vendor/CryptoSwift/UInt32+Extension.swift"; sourceTree = "<group>"; };
+		68DAEE0DB26E5921B551F2CE5EF6ACDD /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = it.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		69BB46FEBAE8C2F6649E2DB7FECCE353 /* MessageManagedObject+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MessageManagedObject+CoreDataProperties.swift"; path = "Classes/Core/InternalStorage/MessageManagedObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6BF8599A4A914DB076BCA49AC308045B /* LoadingImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LoadingImageView.swift; path = Classes/InteractiveNotifications/MessageAlert/LoadingImageView.swift; sourceTree = "<group>"; };
+		6CFCD99097B95DC870229E9EA03615CB /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = cs.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		6D793431EEE6B54AF7BCFC60D220AB2B /* Pods-Infobip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Infobip-dummy.m"; sourceTree = "<group>"; };
+		6E54A7F288DBA9640E6ED029FCAC9386 /* MessageFetchingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageFetchingOperation.swift; path = Classes/Core/Operations/AppOperations/MessageFetchingOperation.swift; sourceTree = "<group>"; };
+		6EBE181721E8F884A75E80468B1F8C3A /* PrivacySettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrivacySettings.swift; path = Classes/Core/PrivacySettings.swift; sourceTree = "<group>"; };
+		6F9AF72FA6D7A451C1AA0714AE623D7A /* Pods-Infobip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Infobip-umbrella.h"; sourceTree = "<group>"; };
+		70C232359126868288408188DC4A5BAD /* GeoEventReportObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GeoEventReportObject.swift; path = Classes/Core/InternalStorage/GeoEventReportObject.swift; sourceTree = "<group>"; };
+		72A2D4CE1B8646DC3F607CBE380C7EFD /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Classes/Vendor/Alamofire/Notifications.swift; sourceTree = "<group>"; };
+		75B304BA161EB0DD776AEC27CCA913B9 /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Classes/Vendor/Kingsfisher/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
+		78C320450F69EC1034095B156B1CC1D1 /* MMMessageStorage.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = MMMessageStorage.xcdatamodel; sourceTree = "<group>"; };
+		7BEACDA1999DD8B6895A868D51BA2D2C /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Classes/Vendor/Alamofire/Response.swift; sourceTree = "<group>"; };
+		7C437D691B09E67374E02BC068A7F14E /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = hi.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		7CAF365577902EAF31700703C70FA804 /* BlockOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockOperation.swift; path = Classes/Vendor/PSOperations/BlockOperation.swift; sourceTree = "<group>"; };
+		7D6C0454C2BD7B9FF01E2599BD9FCE2D /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = es.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		8164541020C5E70A658E25F1E5471B16 /* MMNotifications.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MMNotifications.m; path = Classes/Core/MMNotifications.m; sourceTree = "<group>"; };
+		81FAABE35FC2221CB313A87E7C2CE7B8 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Classes/Vendor/Alamofire/SessionDelegate.swift; sourceTree = "<group>"; };
+		826A5EB12761844FDD845EEF166D874C /* InstallationMigrationPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstallationMigrationPolicy.swift; path = Classes/Core/InternalStorage/InstallationMigrationPolicy.swift; sourceTree = "<group>"; };
+		835CEEA0B27F20F447450BA22F32A611 /* MMMessageHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMMessageHandler.swift; path = Classes/Core/Operations/MMMessageHandler.swift; sourceTree = "<group>"; };
+		8456C989268D50151502C331EAEE2EAC /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = vi.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		84EA5DB829C5FE61CBA0EDB7BFD2D5CE /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Classes/Vendor/Alamofire/MultipartFormData.swift; sourceTree = "<group>"; };
+		8653BCFBE31751B9D5861492A1FD118A /* UserCustomAttributeModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserCustomAttributeModels.swift; path = Classes/Core/User/UserCustomAttributeModels.swift; sourceTree = "<group>"; };
+		8757E36DAADCD74DD2FD5F8D900480BE /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Classes/Vendor/Kingsfisher/Kingfisher.swift; sourceTree = "<group>"; };
+		88F1A6203443DF260F7E2975EC645F52 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = hu.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		8A947B83C80CEB070CE13A3618F67DF4 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = ru.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		8BF94603C649EE13D39446EF4D758441 /* InteractiveMessageAlertController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveMessageAlertController.swift; path = Classes/InteractiveNotifications/MessageAlert/InteractiveMessageAlertController.swift; sourceTree = "<group>"; };
+		8CCB09D71C8556C43B874563E168930E /* Int+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Extension.swift"; path = "Classes/Vendor/CryptoSwift/Int+Extension.swift"; sourceTree = "<group>"; };
+		8FD67E0C6823D202E862B90A0B402305 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		903659A303AB9FB020585B0E186634F8 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Classes/Vendor/Alamofire/ResponseSerialization.swift; sourceTree = "<group>"; };
+		9160ECD98561D2B8B6B625794D99A2C2 /* InteractiveMessageAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveMessageAlert.swift; path = Classes/InteractiveNotifications/MessageAlert/InteractiveMessageAlert.swift; sourceTree = "<group>"; };
+		91E08A3C0514986182D86957AE85A7A1 /* MobileMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobileMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F2F90AD7EC65DC4F95A93F757F9068 /* Indicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Indicator.swift; path = Classes/Vendor/Kingsfisher/Indicator.swift; sourceTree = "<group>"; };
+		93A14E0F34F4D508743477FF031E8464 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = sk.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		9448ED07A27262B7FA1BAD2EB7EBB836 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = "zh-Hant.lproj/MobileMessaging.strings"; sourceTree = "<group>"; };
+		944C9BAD0D95BE5F6BFBA4CFCD4D7BBF /* MobileMessaging-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MobileMessaging-prefix.pch"; sourceTree = "<group>"; };
+		94D54BB08F883C7AA4AAF9F1D9760C2D /* InstallationDataService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstallationDataService.swift; path = Classes/Core/Installation/InstallationDataService.swift; sourceTree = "<group>"; };
+		951BCBF4186521FEA2BECDF3B356F67F /* Bit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bit.swift; path = Classes/Vendor/CryptoSwift/Bit.swift; sourceTree = "<group>"; };
+		95E0FAD0FE10BE04AD143031DFC94BAE /* MOMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MOMessage.swift; path = Classes/Core/Message/MOMessage.swift; sourceTree = "<group>"; };
+		95EDF8836A53BC68ADC2B5F8B5080D53 /* Archivable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Archivable.swift; path = Classes/Core/InternalStorage/Archivable.swift; sourceTree = "<group>"; };
+		9626528A44CE0A0CDF167B5CE24E2974 /* InteractiveMessageButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InteractiveMessageButton.swift; path = Classes/InteractiveNotifications/MessageAlert/InteractiveMessageButton.swift; sourceTree = "<group>"; };
+		9957DC6A5AE11940AC3B4B32030CC3D6 /* MMAPIKeysAndValues.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMAPIKeysAndValues.swift; path = Classes/Core/HTTP/MMAPIKeysAndValues.swift; sourceTree = "<group>"; };
+		99C476303F761CF4932D95F3256D993F /* PersonalizeOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersonalizeOperation.swift; path = Classes/Core/Operations/AppOperations/PersonalizeOperation.swift; sourceTree = "<group>"; };
+		9AD0D54ED5D0557F0F0885E5971600B4 /* Updatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Updatable.swift; path = Classes/Vendor/CryptoSwift/Updatable.swift; sourceTree = "<group>"; };
+		9BB4CA40EF4E82FF0B5F9D284DC04D37 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = nb.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		9BFA13B4AF34FD3695DFA36A1AA16195 /* UserNotificationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserNotificationType.swift; path = Classes/Core/Utils/UserNotificationType.swift; sourceTree = "<group>"; };
+		9C303E9929A0F654FDFE107958BA37AA /* MessageHandlingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageHandlingOperation.swift; path = Classes/Core/Operations/AppOperations/MessageHandlingOperation.swift; sourceTree = "<group>"; };
+		9D56FDCCCE73CF24EDE18E42AC9DC395 /* BlockObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BlockObserver.swift; path = Classes/Vendor/PSOperations/BlockObserver.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E516FEF5F9C6F52158CB1BBBDA10FBB /* LocalMessageFetchingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LocalMessageFetchingOperation.swift; path = Classes/Core/Operations/AppOperations/LocalMessageFetchingOperation.swift; sourceTree = "<group>"; };
+		9F9001F13442FC92E6C2F96746C6981C /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Classes/Vendor/Alamofire/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		A0307871908047D5F156AB219888E2BD /* MMLocalization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMLocalization.swift; path = Classes/Core/Utils/MMLocalization.swift; sourceTree = "<group>"; };
+		A1419C56D93866D817947353690A841A /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = ro.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		A1DDE98ABD2814861A01FE71A8099B8C /* OperationObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationObserver.swift; path = Classes/Vendor/PSOperations/OperationObserver.swift; sourceTree = "<group>"; };
+		A1E30E8B8EF104E346CD6F971E9529CE /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Classes/Vendor/Alamofire/Validation.swift; sourceTree = "<group>"; };
+		A208372E02AEC33A32B7688F77E97016 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = th.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		A2B340095FC942B9ABC18187377D22A4 /* SeenStatusPersistingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeenStatusPersistingOperation.swift; path = Classes/Core/Operations/AppOperations/SeenStatusPersistingOperation.swift; sourceTree = "<group>"; };
+		A301F02EE1065E67C819B55E3E29327C /* MMNotifications.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MMNotifications.h; path = Classes/Core/MMNotifications.h; sourceTree = "<group>"; };
+		A3566F24773E440E026C304571FB3FEA /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = pl.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		A46D6704CDC14DFCA2E402ED2328B4C4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		A5D7F97E825F22E671547EC470BF9FB3 /* InstallationAttributeModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InstallationAttributeModels.swift; path = Classes/Core/Installation/InstallationAttributeModels.swift; sourceTree = "<group>"; };
+		A5F192CC28D483A12BF538EF6366CFCF /* MobileMessaging-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MobileMessaging-umbrella.h"; path = "Classes/MobileMessaging-umbrella.h"; sourceTree = "<group>"; };
+		A5F6AF18A7C3010586DD452E2963765D /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = sv.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		A6BFAE1A006323E8E0146D54761A7B7B /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		A853B9A8F3FF7005275D2A5F465784D6 /* Dictionary+Operations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dictionary+Operations.swift"; path = "Classes/Vendor/PSOperations/Dictionary+Operations.swift"; sourceTree = "<group>"; };
+		A8B6A00567E9507DB93AF0B585C12400 /* SessionManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionManager.swift; path = Classes/Vendor/Alamofire/SessionManager.swift; sourceTree = "<group>"; };
+		A8D88D80BFB2866C634E47169F43D1AF /* MobileMessaging.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MobileMessaging.modulemap; sourceTree = "<group>"; };
+		AA18626833165DE4B093B4163443A253 /* MMUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMUtils.swift; path = Classes/Core/Utils/MMUtils.swift; sourceTree = "<group>"; };
+		AB021285D25E0EEC4601FFD55B7570D7 /* Image.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Image.swift; path = Classes/Vendor/Kingsfisher/Image.swift; sourceTree = "<group>"; };
+		ABBE8DBB4EBC50CFFB731A27F8EFEC3D /* GeoEventReportObject+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GeoEventReportObject+CoreDataProperties.swift"; path = "Classes/Core/InternalStorage/GeoEventReportObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		AC22AB2C4988C7EAB7DA006A5AF5831D /* ApnsRegistrationManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ApnsRegistrationManager.swift; path = Classes/Core/Utils/ApnsRegistrationManager.swift; sourceTree = "<group>"; };
+		ACB7DEFD585582DBA40FA66387AEA1C3 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = ms.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		AE6C13261E8B58309A068EA72C9DD1BD /* DeleteInstanceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeleteInstanceOperation.swift; path = Classes/Core/Operations/AppOperations/DeleteInstanceOperation.swift; sourceTree = "<group>"; };
+		AF02B1C39AFACC7D92753CED478B253E /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Classes/Vendor/CryptoSwift/Utils.swift; sourceTree = "<group>"; };
+		AF0A73A0C21B9E616AE8600F022484A4 /* MobileMessaging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MobileMessaging.swift; path = Classes/Core/MobileMessaging.swift; sourceTree = "<group>"; };
+		B077E26CC468361BE6F766DE71B993C2 /* SHA1.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHA1.swift; path = Classes/Vendor/CryptoSwift/SHA1.swift; sourceTree = "<group>"; };
+		B26D743CAE2BDDF454D44CF3F5C75BC7 /* ImageTransition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageTransition.swift; path = Classes/Vendor/Kingsfisher/ImageTransition.swift; sourceTree = "<group>"; };
+		B5A15F2E4CCCDB30F3EFE11748758557 /* MMApplicationListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMApplicationListener.swift; path = Classes/Core/Operations/MMApplicationListener.swift; sourceTree = "<group>"; };
+		B6408EE42C4313B14175145E271E58B9 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Classes/Vendor/Alamofire/Alamofire.swift; sourceTree = "<group>"; };
+		B731CFB0B208A1E4BF8049F1C6EFC38A /* ImageView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ImageView+Kingfisher.swift"; path = "Classes/Vendor/Kingsfisher/ImageView+Kingfisher.swift"; sourceTree = "<group>"; };
+		B86DBFE0C3A719EF88C2B56B764A1BE4 /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Classes/Vendor/Kingsfisher/Resource.swift; sourceTree = "<group>"; };
+		B9C3F07DFDC2AAE7EA91C0DC3ACB1C38 /* RequestModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestModifier.swift; path = Classes/Vendor/Kingsfisher/RequestModifier.swift; sourceTree = "<group>"; };
+		BBECC5E952722A39FE8EA487EAC0AAE8 /* MTMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MTMessage.swift; path = Classes/Core/Message/MTMessage.swift; sourceTree = "<group>"; };
+		BDD9118C71BD7BEA58E3A64F8963B0EB /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = Classes/Vendor/Kingsfisher/ThreadHelper.swift; sourceTree = "<group>"; };
+		BE84CDDA9C7184EDF9FFEC43E61FA97E /* KeychainSwiftAccessOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeychainSwiftAccessOptions.swift; path = Classes/Vendor/Keychain/KeychainSwiftAccessOptions.swift; sourceTree = "<group>"; };
+		BFF3C5E0E6218FE8A5743398320E6417 /* TegKeychainConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TegKeychainConstants.swift; path = Classes/Vendor/Keychain/TegKeychainConstants.swift; sourceTree = "<group>"; };
+		C0FE8674AB70C79C941E1E61F87C9682 /* Pods-Infobip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Infobip.release.xcconfig"; sourceTree = "<group>"; };
+		C10140DC8BBD95D7CE9C19516236A64C /* NotificationsInteractionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NotificationsInteractionService.swift; path = Classes/InteractiveNotifications/NotificationsInteractionService.swift; sourceTree = "<group>"; };
+		C1537AF963EE8C2C4EAF59FD38C08909 /* Pods-Infobip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Infobip.debug.xcconfig"; sourceTree = "<group>"; };
+		C2560E4B418557D335A636A08A2DB6D5 /* MMKeychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMKeychain.swift; path = Classes/Core/MMKeychain.swift; sourceTree = "<group>"; };
+		C4E4AE5392B3AA2F6F305A31FFE1A86E /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = da.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		C874BA21FFCE51C2E56016D092EA1821 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = fr.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		C934EEF91633270A789B558440DD61D3 /* MMDefaultMessageStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMDefaultMessageStorage.swift; path = Classes/MessageStorage/MMDefaultMessageStorage.swift; sourceTree = "<group>"; };
+		C9655E973E390ECBBD441C4685503EE4 /* Kingfisher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Kingfisher.h; path = Classes/Vendor/Kingsfisher/Kingfisher.h; sourceTree = "<group>"; };
+		CB4E52AC3237CD832662923F00255516 /* State.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = State.swift; path = Classes/Vendor/PSOperations/State.swift; sourceTree = "<group>"; };
+		CC31276A8581A81C889380A2CDC71D66 /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Classes/Vendor/Kingsfisher/Placeholder.swift; sourceTree = "<group>"; };
+		CC3787199B4FF609E1AD36CBCDCAEA11 /* OperationCondition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OperationCondition.swift; path = Classes/Vendor/PSOperations/OperationCondition.swift; sourceTree = "<group>"; };
+		CC3D036034A5D6362D9E2BC04ED6A2F8 /* StorageProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageProtocols.swift; path = Classes/MessageStorage/StorageProtocols.swift; sourceTree = "<group>"; };
+		CCE8C02B9D50D278E463BD2D7680D7EA /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Classes/Vendor/Kingsfisher/ImageDownloader.swift; sourceTree = "<group>"; };
+		CF59F1ED3B5CE1ABFBFB55F64C24E3FF /* Data+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extension.swift"; path = "Classes/Vendor/CryptoSwift/Data+Extension.swift"; sourceTree = "<group>"; };
+		CFE74E1D0E347AA60A5B2C0519CE3418 /* MMPostponer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMPostponer.swift; path = Classes/Core/Utils/MMPostponer.swift; sourceTree = "<group>"; };
+		D354CA89C82CF6675A8E1D3813EF163C /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = nl.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		D4272E1F992ED8BBEA3C5942D6B59EEE /* Migration_2_3.xcmappingmodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcmappingmodel; name = Migration_2_3.xcmappingmodel; path = Classes/Core/InternalStorage/Migration_2_3.xcmappingmodel; sourceTree = "<group>"; };
+		D7A2B96071A7F5EA97656AA082544D28 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Classes/Vendor/Alamofire/Result.swift; sourceTree = "<group>"; };
+		D94438585BC2377DD92D3D0BF0E2B4AE /* DigestType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DigestType.swift; path = Classes/Vendor/CryptoSwift/DigestType.swift; sourceTree = "<group>"; };
+		DAF74274BD6B70484A48984CC5D60C6B /* MobileMessagingCordovaApplicationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MobileMessagingCordovaApplicationDelegate.h; path = Classes/Core/MobileMessagingCordovaApplicationDelegate.h; sourceTree = "<group>"; };
+		DBB23973A7A6E4E03D2F7208C3AB73C9 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Classes/Vendor/Kingsfisher/ImageModifier.swift; sourceTree = "<group>"; };
+		DD55F58205FCB59ED2D06F8901B72CE9 /* FetchUserOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchUserOperation.swift; path = Classes/Core/Operations/AppOperations/FetchUserOperation.swift; sourceTree = "<group>"; };
+		DD80D01D7C78EA054031BC4B8B40101A /* FetchInstanceOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FetchInstanceOperation.swift; path = Classes/Core/Operations/AppOperations/FetchInstanceOperation.swift; sourceTree = "<group>"; };
+		DDD1440490BADB70E26B2D4B345D0BB5 /* UserDataService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserDataService.swift; path = Classes/Core/User/UserDataService.swift; sourceTree = "<group>"; };
+		DE9120BD78E5A21F896D8D86A529059F /* MMRequests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMRequests.swift; path = Classes/Core/HTTP/MMRequests.swift; sourceTree = "<group>"; };
+		DEF3EDAE4DD24F0324A21B8B87E1921B /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataProperties.swift"; path = "Classes/MessageStorage/Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E1D1282C5CE8F9392ED292182B4BCD19 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = "es-419.lproj/MobileMessaging.strings"; sourceTree = "<group>"; };
+		E2E8E57C03D988BBBF3810D4CC4B8B29 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = de.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		E403D6BDD3DFD376A3820262E96BF6CF /* MMStorageModel_3.xcdatamodel */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcdatamodel; path = MMStorageModel_3.xcdatamodel; sourceTree = "<group>"; };
+		E4E57A3573D84835116C692B0D1BA9B0 /* Pods_Infobip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Infobip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F53543457E0D428063DC60408A818C /* UserStandardAttributeModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserStandardAttributeModels.swift; path = Classes/Core/User/UserStandardAttributeModels.swift; sourceTree = "<group>"; };
+		E9EEE32892655EEC6CDCA30606717B5D /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Classes/Vendor/Kingsfisher/ImagePrefetcher.swift; sourceTree = "<group>"; };
+		EA9CA6035107F49A63CD7F69D1702F97 /* MMOperationQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMOperationQueue.swift; path = Classes/Core/Operations/MMOperationQueue.swift; sourceTree = "<group>"; };
+		EB2626B13F0F50FC0A8CC219A19C1E82 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EB6C9D2FCFFBBE1A5207D6D2EAFC54BC /* SeenStatusSendingOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SeenStatusSendingOperation.swift; path = Classes/Core/Operations/AppOperations/SeenStatusSendingOperation.swift; sourceTree = "<group>"; };
+		ECDDA8E12AAD7779561BE5B4037451B2 /* Alamofire.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Alamofire.h; path = Classes/Vendor/Alamofire/Alamofire.h; sourceTree = "<group>"; };
+		EFD5182154C04D4AA6C30BF7C5978BB8 /* MessageUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageUtils.swift; path = Classes/Core/Message/MessageUtils.swift; sourceTree = "<group>"; };
+		F01E7C297C2B55D7F6CD33014146A35D /* MMLoggingUtil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MMLoggingUtil.swift; path = Classes/Core/MMLoggingUtil.swift; sourceTree = "<group>"; };
+		F5CE2DAABFAB880F71635F20FA3609AF /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = ko.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		F5E7F6FEC7C1178EC890A751B3BE1D37 /* PredefinedNotificationCategories.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = PredefinedNotificationCategories.plist; path = Classes/InteractiveNotifications/PredefinedNotificationCategories.plist; sourceTree = "<group>"; };
+		F822C636317A469D0F38C343EEF692AD /* ImageProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProcessor.swift; path = Classes/Vendor/Kingsfisher/ImageProcessor.swift; sourceTree = "<group>"; };
+		F90E4460EDDF64DFA5F494882DD42C08 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Classes/Vendor/Alamofire/Timeline.swift; sourceTree = "<group>"; };
+		F97578E0A48309F91F7F19759B233522 /* GroupOperation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupOperation.swift; path = Classes/Vendor/PSOperations/GroupOperation.swift; sourceTree = "<group>"; };
+		FA7B8930E35E1A6F29A06E7B37F79CD8 /* RetryableDownloadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryableDownloadTask.swift; path = Classes/RichNotifications/RetryableDownloadTask.swift; sourceTree = "<group>"; };
+		FB39300EC169A36390AE76E4E287F7E6 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = Classes/MessageStorage/Message.swift; sourceTree = "<group>"; };
+		FE4357173D13E1562D419D465ED29C28 /* MobileMessaging.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = MobileMessaging.strings; path = ar.lproj/MobileMessaging.strings; sourceTree = "<group>"; };
+		FEAE220AFAC4EAFEF27D23880D72FF56 /* UserEventsManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserEventsManager.swift; path = Classes/Core/UserEventsManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2949C593391F91754D1CB93C62D6805 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12B5A26D467845C36DF8F75129B03B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E31A89310110D38182360580D448DE0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0E5BD5C71E7FE292BB3B123503F440 /* CoreData.framework in Frameworks */,
+				CF2F3FEAEE20B668E7799D595EE7DFB4 /* CoreTelephony.framework in Frameworks */,
+				C88C95A8B5F75F58E2757B2159731ABF /* Foundation.framework in Frameworks */,
+				3EF736B525396763F49F8DC941B55D06 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04F722C98661603AE466A2BBF7B7A91C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4116254C87CA47EE1B95E7E126AAA595 /* Pods-Infobip */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4116254C87CA47EE1B95E7E126AAA595 /* Pods-Infobip */ = {
+			isa = PBXGroup;
+			children = (
+				418208219917852A45B07DAE769C8BB0 /* Pods-Infobip.modulemap */,
+				047BA3C796140523D92968F9A80C4623 /* Pods-Infobip-acknowledgements.markdown */,
+				2E9E51B126F690F04284A47ABD6857D8 /* Pods-Infobip-acknowledgements.plist */,
+				6D793431EEE6B54AF7BCFC60D220AB2B /* Pods-Infobip-dummy.m */,
+				035B4EBDEBC1AA3A1345CB5AE1845450 /* Pods-Infobip-Info.plist */,
+				6F9AF72FA6D7A451C1AA0714AE623D7A /* Pods-Infobip-umbrella.h */,
+				C1537AF963EE8C2C4EAF59FD38C08909 /* Pods-Infobip.debug.xcconfig */,
+				C0FE8674AB70C79C941E1E61F87C9682 /* Pods-Infobip.release.xcconfig */,
+			);
+			name = "Pods-Infobip";
+			path = "Target Support Files/Pods-Infobip";
+			sourceTree = "<group>";
+		};
+		4AB651E9BEF2DD3C02E3571FAEEDAF26 /* MobileMessaging */ = {
+			isa = PBXGroup;
+			children = (
+				CA1266FC4AC8463758BA104BC112FB7E /* Core */,
+				C19296072E10B4FCE8AD5924A67A1E59 /* Support Files */,
+			);
+			path = MobileMessaging;
+			sourceTree = "<group>";
+		};
+		55339AB9F935E6A815D2C0207543657E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91E08A3C0514986182D86957AE85A7A1 /* MobileMessaging.framework */,
+				E4E57A3573D84835116C692B0D1BA9B0 /* Pods_Infobip.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CCD47068C1D2A3AB1A88F3644A7DCF3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A46D6704CDC14DFCA2E402ED2328B4C4 /* CoreData.framework */,
+				A6BFAE1A006323E8E0146D54761A7B7B /* CoreTelephony.framework */,
+				EB2626B13F0F50FC0A8CC219A19C1E82 /* Foundation.framework */,
+				8FD67E0C6823D202E862B90A0B402305 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CCD47068C1D2A3AB1A88F3644A7DCF3 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD75E07D233B437DCD49351876C79563 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1D047B81AFB68D759BE64420892BFA70 /* AlertController.xib */,
+				5C6B4E560F48F497992326EBAA1AFE5B /* LoadingImageView.xib */,
+				05B7C6DA537F4A5959F540B645BB87FF /* Migration_0_3.xcmappingmodel */,
+				32A0056ED29CE9208933209102B22014 /* Migration_1_3.xcmappingmodel */,
+				D4272E1F992ED8BBEA3C5942D6B59EEE /* Migration_2_3.xcmappingmodel */,
+				C515ED3C928DC93FD20B5770FC9C9478 /* MMInternalStorageModel.xcdatamodeld */,
+				FB1F9FB51DF3DE134C941900BAB0B0DB /* MMMessageStorageModel.xcdatamodeld */,
+				8E24D3EB1531B73C96B34B5E5898D79B /* MobileMessaging.strings */,
+				F5E7F6FEC7C1178EC890A751B3BE1D37 /* PredefinedNotificationCategories.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C19296072E10B4FCE8AD5924A67A1E59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8D88D80BFB2866C634E47169F43D1AF /* MobileMessaging.modulemap */,
+				43D8AEFB9A229775E125E3984820CD74 /* MobileMessaging.xcconfig */,
+				5933A63FC189D0FC50D48BE76DC6F2C3 /* MobileMessaging-dummy.m */,
+				0DE3B0757BD002A68EE681AD231FD579 /* MobileMessaging-Info.plist */,
+				944C9BAD0D95BE5F6BFBA4CFCD4D7BBF /* MobileMessaging-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MobileMessaging";
+			sourceTree = "<group>";
+		};
+		CA1266FC4AC8463758BA104BC112FB7E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				66CA41C38EEBDD87334F403B09B15AEF /* AFError.swift */,
+				ECDDA8E12AAD7779561BE5B4037451B2 /* Alamofire.h */,
+				B6408EE42C4313B14175145E271E58B9 /* Alamofire.swift */,
+				48B9A0C76A7ECF8DBA822179C1134A5E /* AlertQueue.swift */,
+				5A41F5C08662FCCAF2584CADCF51956D /* AnimatedImageView.swift */,
+				AC22AB2C4988C7EAB7DA006A5AF5831D /* ApnsRegistrationManager.swift */,
+				95EDF8836A53BC68ADC2B5F8B5080D53 /* Archivable.swift */,
+				5BEFB2CB0B349FFE2A1230A6D76687AD /* Array+Extension.swift */,
+				0019AACBA53DAAE556FC753771B21261 /* BaseMessage.swift */,
+				0DD91D856D30F5B62A2701E4C97FD3CF /* BatchedCollection.swift */,
+				951BCBF4186521FEA2BECDF3B356F67F /* Bit.swift */,
+				9D56FDCCCE73CF24EDE18E42AC9DC395 /* BlockObserver.swift */,
+				7CAF365577902EAF31700703C70FA804 /* BlockOperation.swift */,
+				528B176C0EF32848DE3804960AD42B43 /* Box.swift */,
+				4447D0E195D265BFE612C52BBAAB7B55 /* CacheSerializer.swift */,
+				0AE45813AF9B30DF47C417BBA7BFAE69 /* CreateInstanceOperation.swift */,
+				CF59F1ED3B5CE1ABFBFB55F64C24E3FF /* Data+Extension.swift */,
+				AE6C13261E8B58309A068EA72C9DD1BD /* DeleteInstanceOperation.swift */,
+				356167FAA680977B33E04EE066169058 /* DepersonalizeOperation.swift */,
+				A853B9A8F3FF7005275D2A5F465784D6 /* Dictionary+Operations.swift */,
+				01872A8221825C6D24CA288F49F97FA9 /* Digest.swift */,
+				D94438585BC2377DD92D3D0BF0E2B4AE /* DigestType.swift */,
+				577EE0A6620966D0C4C8654ADEA1850A /* DispatchQueue+Alamofire.swift */,
+				29DFE1CBED8BABFBBD19BB67CF42798D /* DynamicBaseUrlHTTPSessionManager.swift */,
+				4A72E43EAEA87D25D2021EE304F1C93F /* ExclusivityController.swift */,
+				DD80D01D7C78EA054031BC4B8B40101A /* FetchInstanceOperation.swift */,
+				DD55F58205FCB59ED2D06F8901B72CE9 /* FetchUserOperation.swift */,
+				0CF90928E54FC6B61E445712F123AA1B /* Filter.swift */,
+				75B304BA161EB0DD776AEC27CCA913B9 /* FormatIndicatedCacheSerializer.swift */,
+				2F5A8863B1513262271100DB93030751 /* Generics.swift */,
+				70C232359126868288408188DC4A5BAD /* GeoEventReportObject.swift */,
+				ABBE8DBB4EBC50CFFB731A27F8EFEC3D /* GeoEventReportObject+CoreDataProperties.swift */,
+				F97578E0A48309F91F7F19759B233522 /* GroupOperation.swift */,
+				AB021285D25E0EEC4601FFD55B7570D7 /* Image.swift */,
+				26CAF0DC6A8F2E6AE6BAA9C7A465D29D /* ImageCache.swift */,
+				CCE8C02B9D50D278E463BD2D7680D7EA /* ImageDownloader.swift */,
+				DBB23973A7A6E4E03D2F7208C3AB73C9 /* ImageModifier.swift */,
+				E9EEE32892655EEC6CDCA30606717B5D /* ImagePrefetcher.swift */,
+				F822C636317A469D0F38C343EEF692AD /* ImageProcessor.swift */,
+				B26D743CAE2BDDF454D44CF3F5C75BC7 /* ImageTransition.swift */,
+				B731CFB0B208A1E4BF8049F1C6EFC38A /* ImageView+Kingfisher.swift */,
+				92F2F90AD7EC65DC4F95A93F757F9068 /* Indicator.swift */,
+				A5D7F97E825F22E671547EC470BF9FB3 /* InstallationAttributeModels.swift */,
+				2658A5D96E3BF144ED46089C4D40091F /* InstallationDataMapper.swift */,
+				94D54BB08F883C7AA4AAF9F1D9760C2D /* InstallationDataService.swift */,
+				58AE2AB8B869A325EE0666D1385C0949 /* InstallationManagedObject.swift */,
+				4D89C095501A44A16F0EE21804308E2A /* InstallationManagedObject+CoreDataProperties.swift */,
+				826A5EB12761844FDD845EEF166D874C /* InstallationMigrationPolicy.swift */,
+				8CCB09D71C8556C43B874563E168930E /* Int+Extension.swift */,
+				9160ECD98561D2B8B6B625794D99A2C2 /* InteractiveMessageAlert.swift */,
+				8BF94603C649EE13D39446EF4D758441 /* InteractiveMessageAlertController.swift */,
+				9626528A44CE0A0CDF167B5CE24E2974 /* InteractiveMessageButton.swift */,
+				4896B834B4B8BD715C0EB94B42937ABF /* KeychainSwift.swift */,
+				BE84CDDA9C7184EDF9FFEC43E61FA97E /* KeychainSwiftAccessOptions.swift */,
+				C9655E973E390ECBBD441C4685503EE4 /* Kingfisher.h */,
+				8757E36DAADCD74DD2FD5F8D900480BE /* Kingfisher.swift */,
+				294689A52CE9FF4723085B33EAF3517C /* KingfisherManager.swift */,
+				40DCFB8EE494611D2C309D89847952BD /* KingfisherOptionsInfo.swift */,
+				6BF8599A4A914DB076BCA49AC308045B /* LoadingImageView.swift */,
+				9E516FEF5F9C6F52158CB1BBBDA10FBB /* LocalMessageFetchingOperation.swift */,
+				FB39300EC169A36390AE76E4E287F7E6 /* Message.swift */,
+				DEF3EDAE4DD24F0324A21B8B87E1921B /* Message+CoreDataProperties.swift */,
+				6E54A7F288DBA9640E6ED029FCAC9386 /* MessageFetchingOperation.swift */,
+				68114ABC75F0515F29BD6912B4A81CD7 /* MessageHandlingDelegate.swift */,
+				9C303E9929A0F654FDFE107958BA37AA /* MessageHandlingOperation.swift */,
+				5B3F6D3EFD4290851F0A90ED1EB59F81 /* MessageManagedObject.swift */,
+				69BB46FEBAE8C2F6649E2DB7FECCE353 /* MessageManagedObject+CoreDataProperties.swift */,
+				457EA85FEBB617DF9C4A479FBD7E7AAC /* MessagePostingOperation.swift */,
+				2E8C9C6DC8233DAFB8DAE84B08D5EA50 /* MessagesEvictionOperation.swift */,
+				13EE66F502C669A0C6385C7F4A5BAA7F /* MessagesSyncOperation.swift */,
+				EFD5182154C04D4AA6C30BF7C5978BB8 /* MessageUtils.swift */,
+				9957DC6A5AE11940AC3B4B32030CC3D6 /* MMAPIKeysAndValues.swift */,
+				B5A15F2E4CCCDB30F3EFE11748758557 /* MMApplicationListener.swift */,
+				6473F29E5F3121148AB1E4BFDC99E00D /* MMCoreDataExtensions.swift */,
+				1815898A17F1E7D1B1D2853C9C04B06B /* MMCoreDataStorage.swift */,
+				C934EEF91633270A789B558440DD61D3 /* MMDefaultMessageStorage.swift */,
+				283D47159B8232F661832C09B016A61B /* MMGCD.swift */,
+				C2560E4B418557D335A636A08A2DB6D5 /* MMKeychain.swift */,
+				A0307871908047D5F156AB219888E2BD /* MMLocalization.swift */,
+				2205ACF737F787B0E1E1557A4AC6F93E /* MMLocalNotifications.swift */,
+				F01E7C297C2B55D7F6CD33014146A35D /* MMLoggingUtil.swift */,
+				835CEEA0B27F20F447450BA22F32A611 /* MMMessageHandler.swift */,
+				3D32852368BDC2A0FC076CE0CF60F27E /* MMNotificationAction.swift */,
+				16AE45CAA7154032159B0102FEA2EE01 /* MMNotificationCategory.swift */,
+				A301F02EE1065E67C819B55E3E29327C /* MMNotifications.h */,
+				8164541020C5E70A658E25F1E5471B16 /* MMNotifications.m */,
+				60F5E1A8F991A5701783E4D7935F2E5D /* MMNSErrorExtension.swift */,
+				EA9CA6035107F49A63CD7F69D1702F97 /* MMOperationQueue.swift */,
+				CFE74E1D0E347AA60A5B2C0519CE3418 /* MMPostponer.swift */,
+				DE9120BD78E5A21F896D8D86A529059F /* MMRequests.swift */,
+				3A67587FF018E82A2BE8C07BD90169F2 /* MMResponses.swift */,
+				62B62FA5D5ECC42AAC51F8FB906531CE /* MMUserAgent.swift */,
+				AA18626833165DE4B093B4163443A253 /* MMUtils.swift */,
+				06641023581E3812FC04B4DB2FDD9D7F /* MMVersion.swift */,
+				1EF4C6BCB83398E65492DA973E59EFD6 /* MMVersionManager.swift */,
+				AF0A73A0C21B9E616AE8600F022484A4 /* MobileMessaging.swift */,
+				A5F192CC28D483A12BF538EF6366CFCF /* MobileMessaging-umbrella.h */,
+				DAF74274BD6B70484A48984CC5D60C6B /* MobileMessagingCordovaApplicationDelegate.h */,
+				554E79AF54CD4F36BD6D60C948661DFB /* MobileMessagingCordovaApplicationDelegate.m */,
+				95E0FAD0FE10BE04AD143031DFC94BAE /* MOMessage.swift */,
+				BBECC5E952722A39FE8EA487EAC0AAE8 /* MTMessage.swift */,
+				84EA5DB829C5FE61CBA0EDB7BFD2D5CE /* MultipartFormData.swift */,
+				2E062F8FBC90411FA3D15E237E0D4868 /* NetworkReachabilityManager.swift */,
+				72A2D4CE1B8646DC3F607CBE380C7EFD /* Notifications.swift */,
+				C10140DC8BBD95D7CE9C19516236A64C /* NotificationsInteractionService.swift */,
+				28D8704018A8A2F5FD490E3B2B264DA4 /* NSLock+Operations.swift */,
+				479E0E33A44EC8F393490D24079C92DE /* NSOperation+Operations.swift */,
+				07641BF2FCA18334BDAF8183F6C9B719 /* Operation.swift */,
+				CC3787199B4FF609E1AD36CBCDCAEA11 /* OperationCondition.swift */,
+				01FCB6B099D5F4414FD174E7AEEDCE83 /* OperationErrors.swift */,
+				A1DDE98ABD2814861A01FE71A8099B8C /* OperationObserver.swift */,
+				66F352A60ACE75FB946176699CB83A3F /* OperationQueue.swift */,
+				4B07805E504225833AAC094A40947124 /* ParameterEncoding.swift */,
+				99C476303F761CF4932D95F3256D993F /* PersonalizeOperation.swift */,
+				CC31276A8581A81C889380A2CDC71D66 /* Placeholder.swift */,
+				6EBE181721E8F884A75E80468B1F8C3A /* PrivacySettings.swift */,
+				09F79C81C49F9C6D51FD41E642B4C1D2 /* RegistrationResetOperation.swift */,
+				2F5270FA574FCC13F2E901C33D182792 /* RemoteAPIProvider.swift */,
+				48F011C4549366FA7231E59B89DE0CAC /* Request.swift */,
+				B9C3F07DFDC2AAE7EA91C0DC3ACB1C38 /* RequestModifier.swift */,
+				5333EC8F6E5FDA9274FED10837EAE9B4 /* Requests.swift */,
+				B86DBFE0C3A719EF88C2B56B764A1BE4 /* Resource.swift */,
+				7BEACDA1999DD8B6895A868D51BA2D2C /* Response.swift */,
+				903659A303AB9FB020585B0E186634F8 /* ResponseSerialization.swift */,
+				D7A2B96071A7F5EA97656AA082544D28 /* Result.swift */,
+				FA7B8930E35E1A6F29A06E7B37F79CD8 /* RetryableDownloadTask.swift */,
+				3079A6C5381A383039E1482B152582D0 /* RichNotificationsExtensions.swift */,
+				A2B340095FC942B9ABC18187377D22A4 /* SeenStatusPersistingOperation.swift */,
+				EB6C9D2FCFFBBE1A5207D6D2EAFC54BC /* SeenStatusSendingOperation.swift */,
+				9F9001F13442FC92E6C2F96746C6981C /* ServerTrustPolicy.swift */,
+				81FAABE35FC2221CB313A87E7C2CE7B8 /* SessionDelegate.swift */,
+				A8B6A00567E9507DB93AF0B585C12400 /* SessionManager.swift */,
+				B077E26CC468361BE6F766DE71B993C2 /* SHA1.swift */,
+				CB4E52AC3237CD832662923F00255516 /* State.swift */,
+				CC3D036034A5D6362D9E2BC04ED6A2F8 /* StorageProtocols.swift */,
+				06F36D8C8D49B56542BAA90FE98F07C4 /* String+Extension.swift */,
+				1EFBD7C29CC50D5DE22920A12B3D8256 /* String+MD5.swift */,
+				2980162CFE359A33FE5847FADB40849F /* SwiftyJSON.swift */,
+				4101DC0F5F5106CE57B7496384413650 /* TaskDelegate.swift */,
+				BFF3C5E0E6218FE8A5743398320E6417 /* TegKeychainConstants.swift */,
+				BDD9118C71BD7BEA58E3A64F8963B0EB /* ThreadHelper.swift */,
+				F90E4460EDDF64DFA5F494882DD42C08 /* Timeline.swift */,
+				02AE9D68D56F52106B51CA00D3994B0E /* Transformer.swift */,
+				3A9A44AA89F75F0339543659FF4B973D /* UIButton+Kingfisher.swift */,
+				68D1987A995FC04DACAF348DCF30865D /* UInt32+Extension.swift */,
+				9AD0D54ED5D0557F0F0885E5971600B4 /* Updatable.swift */,
+				308D96965E17AB2D11D0C55E771188C1 /* UpdateInstanceOperation.swift */,
+				051DA22F70EF1E5588B512C08042BE52 /* UpdateUserOperation.swift */,
+				8653BCFBE31751B9D5861492A1FD118A /* UserCustomAttributeModels.swift */,
+				50C9E69C5D93D83B1382A294D6048986 /* UserDataMapper.swift */,
+				DDD1440490BADB70E26B2D4B345D0BB5 /* UserDataService.swift */,
+				FEAE220AFAC4EAFEF27D23880D72FF56 /* UserEventsManager.swift */,
+				04A07D869EBEC5BF6C5399E50D137528 /* UserNotificationCenterDelegate.swift */,
+				9BFA13B4AF34FD3695DFA36A1AA16195 /* UserNotificationType.swift */,
+				E8F53543457E0D428063DC60408A818C /* UserStandardAttributeModels.swift */,
+				AF02B1C39AFACC7D92753CED478B253E /* Utils.swift */,
+				A1E30E8B8EF104E346CD6F971E9529CE /* Validation.swift */,
+				BD75E07D233B437DCD49351876C79563 /* Resources */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				E6F74F029A2DC4321DD649B96DDA4CD8 /* Pods */,
+				55339AB9F935E6A815D2C0207543657E /* Products */,
+				04F722C98661603AE466A2BBF7B7A91C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E6F74F029A2DC4321DD649B96DDA4CD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4AB651E9BEF2DD3C02E3571FAEEDAF26 /* MobileMessaging */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9A3EAF3CEBB7E53A848A0CC1BCB6BEF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8123F4D06D61AD8132B5E748E07EB925 /* Alamofire.h in Headers */,
+				AEF8C2BD70BBBD8488820CBB8F0E536A /* Kingfisher.h in Headers */,
+				F9ECD00921E89D744BEFA881448B55C7 /* MMNotifications.h in Headers */,
+				7AA300DDB96EBD3EC5EA208659055F5E /* MobileMessaging-umbrella.h in Headers */,
+				963E3EC95B40D66C88AD0DD78A243973 /* MobileMessagingCordovaApplicationDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F12DA56D97CD46C597B77C9047346476 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CADFFE3178F6BAC830CF4176146BDA2 /* Pods-Infobip-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7AE73086865B494601745244A907265D /* Pods-Infobip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6427E4093CFAD72E3B3D57FC3780A07B /* Build configuration list for PBXNativeTarget "Pods-Infobip" */;
+			buildPhases = (
+				F12DA56D97CD46C597B77C9047346476 /* Headers */,
+				8FA626F5BC3C0E89B30707D7491D9670 /* Sources */,
+				E2949C593391F91754D1CB93C62D6805 /* Frameworks */,
+				A96F07CE05B12AA395D98824BF80EF8B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6498E09A5D5447B78D8A9F143459085C /* PBXTargetDependency */,
+			);
+			name = "Pods-Infobip";
+			productName = "Pods-Infobip";
+			productReference = E4E57A3573D84835116C692B0D1BA9B0 /* Pods_Infobip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AEF6026D4423DABCDACE9FAC4AFC458D /* MobileMessaging */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 646EC57F9E1BDD7F4A22B38E460271F4 /* Build configuration list for PBXNativeTarget "MobileMessaging" */;
+			buildPhases = (
+				C9A3EAF3CEBB7E53A848A0CC1BCB6BEF /* Headers */,
+				95030725FF57257E536D2AE6BD5346FB /* Sources */,
+				E31A89310110D38182360580D448DE0C /* Frameworks */,
+				09F4C11E37947E2C4CAF45FB43825ABC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileMessaging;
+			productName = MobileMessaging;
+			productReference = 91E08A3C0514986182D86957AE85A7A1 /* MobileMessaging.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+				cs,
+				da,
+				de,
+				"es-419",
+				es,
+				fi,
+				fr,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				ko,
+				ms,
+				nb,
+				nl,
+				pl,
+				"pt-PT",
+				pt,
+				ro,
+				ru,
+				sk,
+				sv,
+				th,
+				tr,
+				vi,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 55339AB9F935E6A815D2C0207543657E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEF6026D4423DABCDACE9FAC4AFC458D /* MobileMessaging */,
+				7AE73086865B494601745244A907265D /* Pods-Infobip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09F4C11E37947E2C4CAF45FB43825ABC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				390AC6E39E023678733A67AEAC294503 /* AlertController.xib in Resources */,
+				8658AE70BEBFAB82ACD62221E55EC332 /* LoadingImageView.xib in Resources */,
+				3F325146E1D3B6B92612EE146576235E /* Migration_0_3.xcmappingmodel in Resources */,
+				36620E95530931E6F23CBF7F39BE0386 /* Migration_1_3.xcmappingmodel in Resources */,
+				4CEC31A33CB0D3BD9CCDA91931F0D0FD /* Migration_2_3.xcmappingmodel in Resources */,
+				D31C0FC0C62B02A43057E4E963F24C13 /* MobileMessaging.strings in Resources */,
+				D09C90C7C13434A8955B2B706D87B37E /* PredefinedNotificationCategories.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A96F07CE05B12AA395D98824BF80EF8B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8FA626F5BC3C0E89B30707D7491D9670 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E613076DC0BB8CB682EE1AB9FC8D0B78 /* Pods-Infobip-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95030725FF57257E536D2AE6BD5346FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0288BDCE4553B4C525087D167CB5C08 /* AFError.swift in Sources */,
+				5898AD54B53F88737BEE3C71CE67CE43 /* Alamofire.swift in Sources */,
+				747EF6E61D3D907140830C58A4286B55 /* AlertQueue.swift in Sources */,
+				D2033611A3C16D4992984D7AD2ED0BAD /* AnimatedImageView.swift in Sources */,
+				1D21E3E07D667FE6574080560376BC4A /* ApnsRegistrationManager.swift in Sources */,
+				CA698E38AA8053AA40EA1E8E7A376C28 /* Archivable.swift in Sources */,
+				D8D6BFF9593C7AE67DC6206E9AFE1FE8 /* Array+Extension.swift in Sources */,
+				18FD02FA491BAD5EE869F064C1C6E3EE /* BaseMessage.swift in Sources */,
+				68B1DF74DA07033E4A17D9096F786672 /* BatchedCollection.swift in Sources */,
+				61AC1419A4B7DF1C597160B6F95A54DC /* Bit.swift in Sources */,
+				C73F6FDD3FD9BE1E5B18F1CAF35EA651 /* BlockObserver.swift in Sources */,
+				68FFA9BC01FEE4A04EE47CF46A93E7EF /* BlockOperation.swift in Sources */,
+				886419CB684165C5137F721AFD3E0F74 /* Box.swift in Sources */,
+				DBC7F53B3352B1327E4D89FAE3FD6B68 /* CacheSerializer.swift in Sources */,
+				48377C1F5CDACA108735736D844F96E5 /* CreateInstanceOperation.swift in Sources */,
+				F461E136B9E30CAE70B1D6B54FB00504 /* Data+Extension.swift in Sources */,
+				50D8AE3176A59F8640ACF2BBEA803CD9 /* DeleteInstanceOperation.swift in Sources */,
+				A25121A19719756E456BD8B6960297C0 /* DepersonalizeOperation.swift in Sources */,
+				C859977965BA4C79AC44EDBD8D35A591 /* Dictionary+Operations.swift in Sources */,
+				01570BAED77A2BF3686D522F58C78E24 /* Digest.swift in Sources */,
+				944B321AC3F473536A4C191E70D6C0B6 /* DigestType.swift in Sources */,
+				D35B6CC56612B9E8A98DA197C925380C /* DispatchQueue+Alamofire.swift in Sources */,
+				E96AAE37B1BAAC36CBBE7AC6D3541F6F /* DynamicBaseUrlHTTPSessionManager.swift in Sources */,
+				D894A254F45E575EF593532FD35B8FF3 /* ExclusivityController.swift in Sources */,
+				14631E12E229E099D0BA1445FA902C37 /* FetchInstanceOperation.swift in Sources */,
+				B0AA8E01C3A599EF0E98CB6BB24C02BD /* FetchUserOperation.swift in Sources */,
+				BFD03422043F2769BFBC689DA5D4CD8F /* Filter.swift in Sources */,
+				C2E1C750AD93B3285081400CC0523DED /* FormatIndicatedCacheSerializer.swift in Sources */,
+				334C874A95A8A1325B8844F69CD9689D /* Generics.swift in Sources */,
+				BCB2D27D4CB71D0962BEAAE5A7398B5D /* GeoEventReportObject+CoreDataProperties.swift in Sources */,
+				EB52D3616CE7ECCF1CD35181DEEC687E /* GeoEventReportObject.swift in Sources */,
+				31E59EEC068C05DD9047BE8AACC602AD /* GroupOperation.swift in Sources */,
+				0EA40D4F9EBAC22AC31EC4019AFF9D6D /* Image.swift in Sources */,
+				A103C30F1A45E1D5404FEC6426321527 /* ImageCache.swift in Sources */,
+				BF4BD9267A8CC96C89A92C135B85FA0E /* ImageDownloader.swift in Sources */,
+				00A80D5C9B81E5D54FCDA83712D2AACA /* ImageModifier.swift in Sources */,
+				2B1EE05145564FE2B6C3D4956A4A7ABA /* ImagePrefetcher.swift in Sources */,
+				E29136F109C9E5FD0B76DE5B76145017 /* ImageProcessor.swift in Sources */,
+				F9BA890ED92769D7EB322126DD25723B /* ImageTransition.swift in Sources */,
+				782AA7AAF8F1F0B0F2BB2675753DF409 /* ImageView+Kingfisher.swift in Sources */,
+				EFA5E85AE15D78FD00D980AC9512F3B5 /* Indicator.swift in Sources */,
+				CACB75FDD4ACD3882A6644D0CB665056 /* InstallationAttributeModels.swift in Sources */,
+				EAD2D0868FA4CFA5B01AAAA24E732A45 /* InstallationDataMapper.swift in Sources */,
+				BADD05D04FBA728151597FD8B3AD07D2 /* InstallationDataService.swift in Sources */,
+				BB9AD21716BB98A6664EE4013C5589BE /* InstallationManagedObject+CoreDataProperties.swift in Sources */,
+				763D37BD6E04D50CCEF7674B56256DD0 /* InstallationManagedObject.swift in Sources */,
+				E2BC08DF3C43A0458F7155D2A85ED96B /* InstallationMigrationPolicy.swift in Sources */,
+				4FEFD53C73E3213E5983D74C973C48D5 /* Int+Extension.swift in Sources */,
+				4B0227F7DE34D4E3154B2D51CA85D539 /* InteractiveMessageAlert.swift in Sources */,
+				E285C855500B3D02F219E3C073ACF6BD /* InteractiveMessageAlertController.swift in Sources */,
+				1C73318EB799E596CDFC2973C9C3DFC7 /* InteractiveMessageButton.swift in Sources */,
+				BB92473F16CB9F2E49687ED4FF808F05 /* KeychainSwift.swift in Sources */,
+				8BB359B9FC6D76FF4239D787370C4775 /* KeychainSwiftAccessOptions.swift in Sources */,
+				3E146F13446B4B9A6CB914F1C65069DB /* Kingfisher.swift in Sources */,
+				8D84C1E71AF46F7AB7EC5EA41634AAC1 /* KingfisherManager.swift in Sources */,
+				33BC20970A0847782F0D294A0D972E0A /* KingfisherOptionsInfo.swift in Sources */,
+				B62DE5ABB9C2F451BD2ED9C904F4AC7A /* LoadingImageView.swift in Sources */,
+				940F8A9F1F331A1D6ACD7BF3C6CEA7FE /* LocalMessageFetchingOperation.swift in Sources */,
+				B4FB971BF86C7F4B512AF62A50BFFC5F /* Message+CoreDataProperties.swift in Sources */,
+				16C8B327BFB6C8ED520D024EDC38436A /* Message.swift in Sources */,
+				002D0FB922FEDD61C0E1EF67C4027E46 /* MessageFetchingOperation.swift in Sources */,
+				1210237703527DF9BBF544A8F2D4A115 /* MessageHandlingDelegate.swift in Sources */,
+				0CC92E80400A510F73708AEDFF0F3032 /* MessageHandlingOperation.swift in Sources */,
+				65BF01EDDD953ECD1BAD28C7B74D2C2D /* MessageManagedObject+CoreDataProperties.swift in Sources */,
+				D8F31725CD9F4A7F7DB4721CFD6D5864 /* MessageManagedObject.swift in Sources */,
+				8001F8A454ED1F36F1FF4565BC9F8D30 /* MessagePostingOperation.swift in Sources */,
+				92E896A06B0D3257428CAF296E98BAD2 /* MessagesEvictionOperation.swift in Sources */,
+				F25C38F55F205BB9FFB8E3B26C0891F6 /* MessagesSyncOperation.swift in Sources */,
+				4D4B796521D5B865BD0C87B51B0FBF4E /* MessageUtils.swift in Sources */,
+				0A8CD9C12E39C2126D5A6E13E516C177 /* MMAPIKeysAndValues.swift in Sources */,
+				83A14C7728B089981C93D32CEE4DF825 /* MMApplicationListener.swift in Sources */,
+				72798C5B051AC3C9EA669D5B992E9968 /* MMCoreDataExtensions.swift in Sources */,
+				E190E979B481FC66CEFE16A29E60D627 /* MMCoreDataStorage.swift in Sources */,
+				1727F1EAC9F978EB11F2AB65F8179269 /* MMDefaultMessageStorage.swift in Sources */,
+				8B432619B641683A480D3B275F53D507 /* MMGCD.swift in Sources */,
+				7459B0F8E935CA33001E54292EE47CC4 /* MMInternalStorageModel.xcdatamodeld in Sources */,
+				B9524CAB18B5B44543010C6707844F99 /* MMKeychain.swift in Sources */,
+				05147C7AE713BAA1B72918955385BABE /* MMLocalization.swift in Sources */,
+				FD39617AD78B0FABEF5D157E8D03BF2D /* MMLocalNotifications.swift in Sources */,
+				6687FEABB33DCF91935700D173952412 /* MMLoggingUtil.swift in Sources */,
+				5D7E0ADE0590ED27C335E0DB0BFE136F /* MMMessageHandler.swift in Sources */,
+				E5065D67694388172FE21A36A11CFC6F /* MMMessageStorageModel.xcdatamodeld in Sources */,
+				5D40D1B360501C0ED8DC8A4B3A7739A5 /* MMNotificationAction.swift in Sources */,
+				1ADE090E2809CE63EE5D6472ACF4CD1F /* MMNotificationCategory.swift in Sources */,
+				9C0F14AE772A3935734F337983146AF2 /* MMNotifications.m in Sources */,
+				88D340289249C2C9A202D8D59CAE5759 /* MMNSErrorExtension.swift in Sources */,
+				E23F0F2EC315727B9C23BF4B3C64A427 /* MMOperationQueue.swift in Sources */,
+				E6EAE1DE42343CB1DB46983D38576E01 /* MMPostponer.swift in Sources */,
+				9671A76A8A1357845CCC1DD9EF8C9B9C /* MMRequests.swift in Sources */,
+				B3FF59133AA8AA337AF75DFDDCAD6815 /* MMResponses.swift in Sources */,
+				04F096F8EE4EAB95353EF5283B589C51 /* MMUserAgent.swift in Sources */,
+				FD29494B922B6C526FDEEE7854F51894 /* MMUtils.swift in Sources */,
+				BA08FCB3A3E5930AD284825A55E95390 /* MMVersion.swift in Sources */,
+				3F2815633ACB232A02D35392A22A9069 /* MMVersionManager.swift in Sources */,
+				8BFEF7A0FC82F903FC3D751891A1A07F /* MobileMessaging-dummy.m in Sources */,
+				1CDBB0CE54CC4C19C701AC45CA85E703 /* MobileMessaging.swift in Sources */,
+				33E44E089ED76819D3D12C3010B164B5 /* MobileMessagingCordovaApplicationDelegate.m in Sources */,
+				7ADA8018BE2E23F0A67FB0509D4B96EC /* MOMessage.swift in Sources */,
+				27665F1DB208ADEEF0650561A385288E /* MTMessage.swift in Sources */,
+				5A9B7CF2C75943AD2F7C72A0CFEAF414 /* MultipartFormData.swift in Sources */,
+				9781275258F32C55D70EAD16F646919A /* NetworkReachabilityManager.swift in Sources */,
+				06FB8C6CB794E0FE6ABB434DBD2C9454 /* Notifications.swift in Sources */,
+				43BFF10C8254E5FECEC66F88EEBB60A2 /* NotificationsInteractionService.swift in Sources */,
+				79D58D9B446DAED5870F298128631E47 /* NSLock+Operations.swift in Sources */,
+				61139F240828D2ECDF0A8373A8B4740E /* NSOperation+Operations.swift in Sources */,
+				7B46F11B8E804F92679BFBC2E897E02D /* Operation.swift in Sources */,
+				6D874CE2E550F9820280A6FF66350C3F /* OperationCondition.swift in Sources */,
+				171BC8E5A8F1C9B12BA5028996AA85E9 /* OperationErrors.swift in Sources */,
+				A0E37CD419D3BEB283EE4A6362586A4F /* OperationObserver.swift in Sources */,
+				229E6053E698D14304F40A5C1D5BC49A /* OperationQueue.swift in Sources */,
+				D60635EA8B8771923C73409BF9E0BEC5 /* ParameterEncoding.swift in Sources */,
+				6633C528912708E1ABA9985399DD2D50 /* PersonalizeOperation.swift in Sources */,
+				AA93E6D46E1D4B1B77D6151196662736 /* Placeholder.swift in Sources */,
+				1EB1C5BB54AD99124A0E3F5D6B6F1A1F /* PrivacySettings.swift in Sources */,
+				00A6DEF3E71B0AB7A0798FA2F0691733 /* RegistrationResetOperation.swift in Sources */,
+				07F45D39CBE994611F3EC8FB9AAA4914 /* RemoteAPIProvider.swift in Sources */,
+				BF11E2C7786BD32CAF4879137B7C83CE /* Request.swift in Sources */,
+				F57ED55F83BDF8CB87324B2E4098A1EF /* RequestModifier.swift in Sources */,
+				C4C35481B47D51BC9ECC604B1E932235 /* Requests.swift in Sources */,
+				9E4472CDA9AA20BDDA28D351F85B6557 /* Resource.swift in Sources */,
+				7F770A9400523601943D5998367E16F4 /* Response.swift in Sources */,
+				054682E930B8AE840A56AF676A60A520 /* ResponseSerialization.swift in Sources */,
+				54980E301C7BA5C7786EE433D5501B91 /* Result.swift in Sources */,
+				3733465AE9BE28961AB5084641C1AC2D /* RetryableDownloadTask.swift in Sources */,
+				C679D5256564278B9DFF45ACF05F2C00 /* RichNotificationsExtensions.swift in Sources */,
+				B35B6FA60BEF1A6EA38B571AF4D9A72F /* SeenStatusPersistingOperation.swift in Sources */,
+				54E3F8824B2EDC5FA35D8B51C2C668F1 /* SeenStatusSendingOperation.swift in Sources */,
+				C05FEB79D6388B2549E10DBB09A9DF17 /* ServerTrustPolicy.swift in Sources */,
+				6E65C4DC9F0B57D00C486F51C074C4BF /* SessionDelegate.swift in Sources */,
+				99C8D402248977CD12D502815F7B1A0E /* SessionManager.swift in Sources */,
+				590C3D448A57F2A068840FB523E49852 /* SHA1.swift in Sources */,
+				79B93030CA5ADCAC12F22FAB3E944B53 /* State.swift in Sources */,
+				1921DFCE84DF93264CEB771CB92C02B5 /* StorageProtocols.swift in Sources */,
+				46EB10BCDAF3B1C67714D1D89BE4E336 /* String+Extension.swift in Sources */,
+				36737A982C6FAC040F9C77B367C442B3 /* String+MD5.swift in Sources */,
+				54715569A39F4809BFFDC6196EE31E10 /* SwiftyJSON.swift in Sources */,
+				96C754D9EC3204AD36C335A7DBAD9ACA /* TaskDelegate.swift in Sources */,
+				B6D86DB3CDA011383192B0AF9C605D4F /* TegKeychainConstants.swift in Sources */,
+				43A8E772D95A67802367E809343425A4 /* ThreadHelper.swift in Sources */,
+				A850430AAFF0F0F646D7712DB47D0CBB /* Timeline.swift in Sources */,
+				27706EF834FD582ADA2A387F990B7362 /* Transformer.swift in Sources */,
+				4B9B47CF885A34A9CC0BD99F62C8E4DF /* UIButton+Kingfisher.swift in Sources */,
+				095DBA65CE10F644A3495E58620429D3 /* UInt32+Extension.swift in Sources */,
+				5D3C7F58591B493E30F6E8C7BBC9FBFF /* Updatable.swift in Sources */,
+				14BFC065F95690E9806CF283F5FCECE0 /* UpdateInstanceOperation.swift in Sources */,
+				7F7560972FC1D33D514DDAF07BAAD39D /* UpdateUserOperation.swift in Sources */,
+				8610947EC3895B3F2D433CDB824BB845 /* UserCustomAttributeModels.swift in Sources */,
+				1E39ECFB42B8AACD1AE35CD229B3B004 /* UserDataMapper.swift in Sources */,
+				72197C3922FFA4A50FF2F7C3F141897F /* UserDataService.swift in Sources */,
+				EBC9D975D434985DFF6F87880E800B7F /* UserEventsManager.swift in Sources */,
+				9D9E87A4B28696C406CA2FCCECEA5E8A /* UserNotificationCenterDelegate.swift in Sources */,
+				4F70C6456418C2EA1138941414C56E98 /* UserNotificationType.swift in Sources */,
+				D691580B6BE28D53A697B88141380E82 /* UserStandardAttributeModels.swift in Sources */,
+				14480B5D9C227BE9BCF2247A6708F9F1 /* Utils.swift in Sources */,
+				1541CE69323B2065327CF0AF87E1C6D4 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6498E09A5D5447B78D8A9F143459085C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MobileMessaging;
+			target = AEF6026D4423DABCDACE9FAC4AFC458D /* MobileMessaging */;
+			targetProxy = 0789F5B59DD1F1D607D6B5E0835648FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E24D3EB1531B73C96B34B5E5898D79B /* MobileMessaging.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE4357173D13E1562D419D465ED29C28 /* MobileMessaging.strings */,
+				6CFCD99097B95DC870229E9EA03615CB /* MobileMessaging.strings */,
+				C4E4AE5392B3AA2F6F305A31FFE1A86E /* MobileMessaging.strings */,
+				E2E8E57C03D988BBBF3810D4CC4B8B29 /* MobileMessaging.strings */,
+				398A992EDA8F2F1E9750C4590D3D65DA /* MobileMessaging.strings */,
+				E1D1282C5CE8F9392ED292182B4BCD19 /* MobileMessaging.strings */,
+				7D6C0454C2BD7B9FF01E2599BD9FCE2D /* MobileMessaging.strings */,
+				17C5EA8CA0606291B2A3FF55730A44F0 /* MobileMessaging.strings */,
+				C874BA21FFCE51C2E56016D092EA1821 /* MobileMessaging.strings */,
+				4D2FA4FA238D7A5F902A526205C5292F /* MobileMessaging.strings */,
+				7C437D691B09E67374E02BC068A7F14E /* MobileMessaging.strings */,
+				115818C223CBDF283BAB149CA48B258A /* MobileMessaging.strings */,
+				88F1A6203443DF260F7E2975EC645F52 /* MobileMessaging.strings */,
+				1DC12A4E505C96F878C854F0A306EC6D /* MobileMessaging.strings */,
+				68DAEE0DB26E5921B551F2CE5EF6ACDD /* MobileMessaging.strings */,
+				299AC8CC4D3BBB92B8F488D39384EFBC /* MobileMessaging.strings */,
+				F5CE2DAABFAB880F71635F20FA3609AF /* MobileMessaging.strings */,
+				ACB7DEFD585582DBA40FA66387AEA1C3 /* MobileMessaging.strings */,
+				9BB4CA40EF4E82FF0B5F9D284DC04D37 /* MobileMessaging.strings */,
+				D354CA89C82CF6675A8E1D3813EF163C /* MobileMessaging.strings */,
+				A3566F24773E440E026C304571FB3FEA /* MobileMessaging.strings */,
+				644F11F46AC1C73690DA28F3ABD23398 /* MobileMessaging.strings */,
+				49B28837DCCA535336E187D93EC84ED2 /* MobileMessaging.strings */,
+				A1419C56D93866D817947353690A841A /* MobileMessaging.strings */,
+				8A947B83C80CEB070CE13A3618F67DF4 /* MobileMessaging.strings */,
+				93A14E0F34F4D508743477FF031E8464 /* MobileMessaging.strings */,
+				A5F6AF18A7C3010586DD452E2963765D /* MobileMessaging.strings */,
+				A208372E02AEC33A32B7688F77E97016 /* MobileMessaging.strings */,
+				5160B2405D5F105A1BBBD6D668C7F88C /* MobileMessaging.strings */,
+				8456C989268D50151502C331EAEE2EAC /* MobileMessaging.strings */,
+				3CAB09500B8E9E45E3422DBCD2AE05B3 /* MobileMessaging.strings */,
+				9448ED07A27262B7FA1BAD2EB7EBB836 /* MobileMessaging.strings */,
+			);
+			name = MobileMessaging.strings;
+			path = Classes/Core/Localization;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ADF0E463781CA410413AA00BC3FB63C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D8AEFB9A229775E125E3984820CD74 /* MobileMessaging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MobileMessaging/MobileMessaging-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MobileMessaging/MobileMessaging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MobileMessaging/MobileMessaging.modulemap";
+				PRODUCT_MODULE_NAME = MobileMessaging;
+				PRODUCT_NAME = MobileMessaging;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		44A3C638340867F8102EB41EB04BEC32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FE8674AB70C79C941E1E61F87C9682 /* Pods-Infobip.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Infobip/Pods-Infobip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Infobip/Pods-Infobip.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		539297B66F5BEAB23ACEA51C54BC2778 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D8AEFB9A229775E125E3984820CD74 /* MobileMessaging.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MobileMessaging/MobileMessaging-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MobileMessaging/MobileMessaging-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MobileMessaging/MobileMessaging.modulemap";
+				PRODUCT_MODULE_NAME = MobileMessaging;
+				PRODUCT_NAME = MobileMessaging;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BAC2C506724510F81BF6654A5F7395DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1537AF963EE8C2C4EAF59FD38C08909 /* Pods-Infobip.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Infobip/Pods-Infobip-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Infobip/Pods-Infobip.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6427E4093CFAD72E3B3D57FC3780A07B /* Build configuration list for PBXNativeTarget "Pods-Infobip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAC2C506724510F81BF6654A5F7395DA /* Debug */,
+				44A3C638340867F8102EB41EB04BEC32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		646EC57F9E1BDD7F4A22B38E460271F4 /* Build configuration list for PBXNativeTarget "MobileMessaging" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				539297B66F5BEAB23ACEA51C54BC2778 /* Debug */,
+				3ADF0E463781CA410413AA00BC3FB63C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C515ED3C928DC93FD20B5770FC9C9478 /* MMInternalStorageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				598A68911757271B80877CD66336EE6F /* MMStorageModel_0.xcdatamodel */,
+				4AB342E0764D4FB0171E1F421250232D /* MMStorageModel_1.xcdatamodel */,
+				0C2BE48E143431664FD251B518B1C857 /* MMStorageModel_2.xcdatamodel */,
+				E403D6BDD3DFD376A3820262E96BF6CF /* MMStorageModel_3.xcdatamodel */,
+			);
+			currentVersion = E403D6BDD3DFD376A3820262E96BF6CF /* MMStorageModel_3.xcdatamodel */;
+			name = MMInternalStorageModel.xcdatamodeld;
+			path = Classes/Core/InternalStorage/MMInternalStorageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		FB1F9FB51DF3DE134C941900BAB0B0DB /* MMMessageStorageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				78C320450F69EC1034095B156B1CC1D1 /* MMMessageStorage.xcdatamodel */,
+			);
+			currentVersion = 78C320450F69EC1034095B156B1CC1D1 /* MMMessageStorage.xcdatamodel */;
+			name = MMMessageStorageModel.xcdatamodeld;
+			path = Classes/MessageStorage/MMMessageStorageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
